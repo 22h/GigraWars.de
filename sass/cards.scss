@@ -1,0 +1,63 @@
+.card {
+
+  border-radius: 2px;
+  border:0;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+
+  a, a:visited {
+    color: #f8f8f8;
+
+    &:hover {
+      color: #f8f8f8;
+    }
+  }
+
+  span {
+    width: 100%;
+    display: inline-block;
+
+    &.number {
+      font-size: 2rem;
+    }
+    &.title {
+      font-weight: 400;
+    }
+
+
+  }
+
+  &.card-danger {
+    background: #F44336;
+    &:hover {
+      background: rgba(#F44336, 0.9);
+    }
+  }
+
+  &.card-warning {
+    background: #FF9800;
+    &:hover {
+      background: rgba(#FF9800, 0.9);
+    }
+  }
+
+  &.card-success {
+    background: #8BC34A;
+    &:hover {
+      background: rgba(#8BC34A, 0.9);
+    }
+  }
+
+  &.card-primary {
+    background: #1976D2;
+    &:hover {
+      background: rgba(#1976D2, 0.9);
+    }
+  }
+
+  &.card-dark {
+    background: #383838;
+    &:hover {
+      background: rgba(#383838, 0.9);
+    }
+  }
+}

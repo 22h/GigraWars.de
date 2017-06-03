@@ -1,0 +1,349 @@
+@charset "UTF-8";
+
+body {
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    position: relative;
+    -webkit-font-smoothing: antialiased;
+    background: #212121 url("../images/nav-background.gif");
+    color: #f8f8f8;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* Simple Elements
+--------------------------------------------- */
+
+h1, h2, h3, h4, .h1, .h2, .h3, .h4 {
+    font-weight: 300;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
+}
+
+
+
+p {
+    word-wrap: break-word;
+}
+
+a, a:active, a:focus {
+    outline: none !important;
+    font-weight: 400;
+}
+
+.blue {
+    color: #47a6db;
+}
+
+.green {
+    color: #00d72e;
+}
+.red {
+    color: #d70000;
+}
+
+/* Top Navigation
+--------------------------------------------- */
+
+#top-nav {
+    background: url("../images/nav-background.gif");
+    border-bottom: 1px solid #000000;
+    color: #e0e0e0;
+    margin: 0;
+}
+
+#top-nav a {
+    color: #e0e0e0;
+}
+
+#top-nav a:hover {
+    color: #2394c0;
+}
+
+#top-nav .navbar-brand {
+    color: #fefefe;
+}
+
+#top-nav {
+    border: 0;
+    border-radius: 0;
+}
+
+#navbar li.active a, #navbar li.open a {
+    background: none;
+}
+
+#navbar .dropdown-menu {
+    background: url("../images/nav-background.gif");
+}
+
+@media (min-width: 768px) {
+    #top-nav .navbar-header {
+        text-align: center;
+    }
+
+    #top-nav .navbar-brand {
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
+    }
+
+    #navbar .navbar-nav a {
+        font-weight: 700;
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
+    }
+}
+
+/* Header on Frontpage
+--------------------------------------------- */
+
+#header {
+    padding: 10px 0;
+    width: 100%;
+    background-image: url("../images/background3.jpg");
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    position: relative;
+}
+
+#header .home-site h1 {
+    width: 200px;
+
+    display: block;
+    margin-top: 40px;
+}
+
+/* Small Header on Frontpage
+--------------------------------------------- */
+#header-small {
+    padding: 10px 0;
+    width: 100%;
+    background-image: url("../images/background3.jpg");
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    position: relative;
+}
+
+#header-small h1 {
+    margin-bottom: 0;
+}
+
+#header-small p.description {
+    font-style: italic;
+    font-weight: 400;
+}
+
+
+/* Footer
+--------------------------------------------- */
+
+#footer {
+    background: #101010;
+    background: -moz-linear-gradient(top, #101010 0%, #111111 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #101010), color-stop(100%, #111111));
+    background: -webkit-linear-gradient(top, #101010 0%, #111111 100%);
+    background: -o-linear-gradient(top, #101010 0%, #111111 100%);
+    background: -ms-linear-gradient(top, #101010 0%, #111111 100%);
+    background: linear-gradient(to bottom, #101010 0%, #111111 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#101010', endColorstr='#111111', GradientType=0);
+}
+
+#footer a {
+    opacity: 0.3;
+    color: #cccccc;
+    margin: 20px 10px;
+    padding: 10px;
+    display: inline-block;
+}
+
+#footer a:hover {
+    opacity: 1;
+}
+
+
+.jumbotron {
+    background: none;
+}
+
+/* background colors
+--------------------------------------------- */
+
+.darkdark {
+    background: #101010;
+}
+
+.darkdark .end, .darkdark .end-invert {
+    background: #101010;
+    background: -moz-linear-gradient(top, #101010 0%, #111111 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #101010), color-stop(100%, #111111));
+    background: -webkit-linear-gradient(top, #101010 0%, #111111 100%);
+    background: -o-linear-gradient(top, #101010 0%, #111111 100%);
+    background: -ms-linear-gradient(top, #101010 0%, #111111 100%);
+    background: linear-gradient(to bottom, #101010 0%, #111111 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#101010', endColorstr='#111111', GradientType=0);
+}
+
+/* tables
+--------------------------------------------- */
+.table {
+    background: rgba(0, 0, 0, .1);
+}
+
+.table > tbody > tr > td, .table > thead > tr > th {
+    border-color: rgba(255, 255, 255, .1);
+}
+
+.table > tbody > tr > td {
+    border-top: dashed 1px rgba(255, 255, 255, .1);
+}
+
+.table-hover > tbody > tr:hover {
+    background: rgba(0, 0, 0, .2);
+}
+
+/* alerts
+--------------------------------------------- */
+.alert-danger {
+    background: rgba(231, 76, 60,1.0);
+    border-color: rgba(192, 57, 43,1.0);
+    color: #FFFFFF;
+}
+.alert-success {
+    background: rgba(46, 204, 113,1.0);
+    border-color: rgba(39, 174, 96,1.0);
+    color: #000000;
+}
+.alert-info {
+    color: #000000;
+}
+
+/* list-groups
+--------------------------------------------- */
+.list-group li {
+    background-color: rgba(0, 0, 0, .2);
+    border-color: rgba(0, 0, 0, .3);
+}
+
+/* spacer
+--------------------------------------------- */
+.spacer5 {
+    height: 5px;
+    width: 100%;
+    font-size: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    display: block;
+}
+
+.spacer10 {
+    height: 10px;
+    width: 100%;
+    font-size: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    display: block;
+}
+
+.spacer15 {
+    height: 15px;
+    width: 100%;
+    font-size: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    display: block;
+}
+
+.spacer20 {
+    height: 20px;
+    width: 100%;
+    font-size: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    display: block;
+}
+
+.spacer25 {
+    height: 25px;
+    width: 100%;
+    font-size: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    display: block;
+}
+
+.spacer30 {
+    height: 30px;
+    width: 100%;
+    font-size: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    display: block;
+}
+
+.spacer35 {
+    height: 35px;
+    width: 100%;
+    font-size: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    display: block;
+}
+
+.spacer40 {
+    height: 40px;
+    width: 100%;
+    font-size: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    display: block;
+}
+
+.spacer45 {
+    height: 45px;
+    width: 100%;
+    font-size: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    display: block;
+}
+
+.spacer50 {
+    height: 50px;
+    width: 100%;
+    font-size: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    display: block;
+}
+
+.spacer100 {
+    height: 100px;
+    width: 100%;
+    font-size: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    display: block;
+}
+
+.spacer200 {
+    height: 200px;
+    width: 100%;
+    font-size: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    display: block;
+}

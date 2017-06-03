@@ -1,0 +1,64 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,400i';
+@import "bootstrap/bootstrap";
+@import "font";
+@import "spaceship";
+@import "cards";
+
+body {
+  background: #212121;
+  font-family: Roboto, Verdana, sans-serif;
+  color: #f8f8f8;
+}
+
+a {
+  color: #47a6db;
+}
+
+.btn {
+  border-radius: 2px;
+  border:0;
+
+  &.btn-primary {
+    background: #F44336;
+  }
+}
+
+
+.white-box {
+  background: #ffffff;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  margin-bottom: 20px;
+
+  &.container-fluid {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+.container-small {
+  max-width: 800px;
+}
+
+#background-full {
+  background: url("../images/background_1.jpg") no-repeat 50% 0;
+  background-size: cover;
+  width: 100%;
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#logo-full {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.container-dark {
+  background: #101010;
+}
+
+.black-30 {
+  background: rgba(0,0,0,0.3);
+}

@@ -1,0 +1,1854 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Toplisten - GigraWars Speed 1</title>
+    <meta charset="utf-8"/>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="http://code.jquery.com/jquery.js"></script>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("select#gwstats").change(function(){
+                $( "select#gwstats option:selected").each(function(){
+                    $(".box").hide();
+                    $("#"+$(this).attr("value")).show();
+                });
+            }).change();
+        });
+    </script>
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-58692233-11']);
+        _gaq.push(['_gat._anonymizeIp']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+</head>
+<body>
+<header>
+    <div class="center">
+        <div id="logo">GigraWars erste Speedrunde</div>
+        <ul>
+            <li><a href="index.html">Übersicht</a></li>
+            <li><a href="building.html">Gebäude</a></li>
+            <li><a href="research.html">Forschungen</a></li>
+            <li class="active"><a href="toplisten.html">Toplisten</a></li>
+        </ul>
+    </div>
+</header>
+<div id="subnav">
+    <div class="center">
+        Wähle eine Topliste aus
+        <select id="gwstats">
+            <option value="playerallpoints">Spieler, nach Gesamtpunkten</option>
+            <option value="playerplanetpoints">Spieler, nach Planetenpunkten</option>
+            <option value="playerresearchpoints">Spieler, nach Forschungspunkten</option>
+            <option value="allianceallpoints">Allianzen, nach Gesamtpunkten</option>
+            <option value="allianceaverage">Allianzen, nach Durchschnitt</option>
+        </select>
+    </div>
+</div>
+<div id="content">
+    <div class="center">
+        <h1>Toplisten</h1>
+            <table class="stats box" style="display: none;" id="playerallpoints">
+                    <tr>
+                        <th colspan="7">Spieler nach Gesamtpunkten</th>
+                    </tr>
+                    <tr>
+                        <td class="dark">#</td>
+                        <td class="dark">Name</td>
+                        <td class="dark">Punkte Forschung</td>
+                        <td class="dark">Punkte Planeten</td>
+                        <td class="dark">Punkte Gesamt</td>
+                        <td class="dark">Anzahl Planeten</td>
+                    </tr>  <tr>
+                        <td>1</td>
+                        <td>EiS <i>[DieHorde]</i></td>
+                        <td>14.963</td>
+                        <td>96.148</td>
+                        <td>111.111</td>
+                        <td>20</td>
+                    </tr>  <tr>
+                        <td>2</td>
+                        <td>Abes182 <i>[DieHorde]</i></td>
+                        <td>11.369</td>
+                        <td>84.163</td>
+                        <td>95.532</td>
+                        <td>20</td>
+                    </tr>  <tr>
+                        <td>3</td>
+                        <td>ElBarto <i>[Wild-C]</i></td>
+                        <td>9.101</td>
+                        <td>83.354</td>
+                        <td>92.455</td>
+                        <td>20</td>
+                    </tr>  <tr>
+                        <td>4</td>
+                        <td>Andi_Latte <i>[-sv-]</i></td>
+                        <td>9.235</td>
+                        <td>73.917</td>
+                        <td>83.152</td>
+                        <td>20</td>
+                    </tr>  <tr>
+                        <td>5</td>
+                        <td>MidNighT </td>
+                        <td>9.367</td>
+                        <td>69.911</td>
+                        <td>79.278</td>
+                        <td>20</td>
+                    </tr>  <tr>
+                        <td>6</td>
+                        <td>ScheichVomDeich <i>[Hell]</i></td>
+                        <td>10.225</td>
+                        <td>66.522</td>
+                        <td>76.747</td>
+                        <td>20</td>
+                    </tr>  <tr>
+                        <td>7</td>
+                        <td>WhiteBeard <i>[OnePiece]</i></td>
+                        <td>3.681</td>
+                        <td>71.822</td>
+                        <td>75.503</td>
+                        <td>20</td>
+                    </tr>  <tr>
+                        <td>8</td>
+                        <td>lvach <i>[Wild-C]</i></td>
+                        <td>9.586</td>
+                        <td>62.957</td>
+                        <td>72.543</td>
+                        <td>20</td>
+                    </tr>  <tr>
+                        <td>9</td>
+                        <td>42na </td>
+                        <td>9.849</td>
+                        <td>62.405</td>
+                        <td>72.254</td>
+                        <td>20</td>
+                    </tr>  <tr>
+                        <td>10</td>
+                        <td>RoniX <i>[Wild-C]</i></td>
+                        <td>6.980</td>
+                        <td>61.531</td>
+                        <td>68.511</td>
+                        <td>20</td>
+                    </tr>  <tr>
+                        <td>11</td>
+                        <td>inaktivefarm <i>[Wild-C]</i></td>
+                        <td>6.869</td>
+                        <td>59.552</td>
+                        <td>66.421</td>
+                        <td>20</td>
+                    </tr>  <tr>
+                        <td>12</td>
+                        <td>DevilsChild <i>[DieHorde]</i></td>
+                        <td>6.822</td>
+                        <td>59.388</td>
+                        <td>66.210</td>
+                        <td>20</td>
+                    </tr>  <tr>
+                        <td>13</td>
+                        <td>frisbee <i>[pimp]</i></td>
+                        <td>5.336</td>
+                        <td>60.383</td>
+                        <td>65.719</td>
+                        <td>20</td>
+                    </tr>  <tr>
+                        <td>14</td>
+                        <td>Schafi <i>[DieHorde]</i></td>
+                        <td>8.168</td>
+                        <td>57.022</td>
+                        <td>65.190</td>
+                        <td>20</td>
+                    </tr>  <tr>
+                        <td>15</td>
+                        <td>powron <i>[DieHorde]</i></td>
+                        <td>11.040</td>
+                        <td>52.184</td>
+                        <td>63.224</td>
+                        <td>20</td>
+                    </tr>  <tr>
+                        <td>16</td>
+                        <td>IBD </td>
+                        <td>6.549</td>
+                        <td>50.413</td>
+                        <td>56.962</td>
+                        <td>15</td>
+                    </tr>  <tr>
+                        <td>17</td>
+                        <td>DrSpacy <i>[Wild-C]</i></td>
+                        <td>6.539</td>
+                        <td>43.583</td>
+                        <td>50.122</td>
+                        <td>20</td>
+                    </tr>  <tr>
+                        <td>18</td>
+                        <td>XxX </td>
+                        <td>4.812</td>
+                        <td>44.075</td>
+                        <td>48.887</td>
+                        <td>20</td>
+                    </tr>  <tr>
+                        <td>19</td>
+                        <td>Schnuffel <i>[Hell]</i></td>
+                        <td>8.016</td>
+                        <td>38.980</td>
+                        <td>46.996</td>
+                        <td>20</td>
+                    </tr>  <tr>
+                        <td>20</td>
+                        <td>Wolfhearth <i>[Wild-C]</i></td>
+                        <td>10.383</td>
+                        <td>35.821</td>
+                        <td>46.204</td>
+                        <td>20</td>
+                    </tr>  <tr>
+                        <td>21</td>
+                        <td>Kobra018 </td>
+                        <td>14.794</td>
+                        <td>29.860</td>
+                        <td>44.654</td>
+                        <td>20</td>
+                    </tr>  <tr>
+                        <td>22</td>
+                        <td>mk525 </td>
+                        <td>6.607</td>
+                        <td>37.915</td>
+                        <td>44.522</td>
+                        <td>20</td>
+                    </tr>  <tr>
+                        <td>23</td>
+                        <td>woeh <i>[DieHorde]</i></td>
+                        <td>5.435</td>
+                        <td>35.935</td>
+                        <td>41.370</td>
+                        <td>20</td>
+                    </tr>  <tr>
+                        <td>24</td>
+                        <td>Ted </td>
+                        <td>7.335</td>
+                        <td>31.395</td>
+                        <td>38.730</td>
+                        <td>20</td>
+                    </tr>  <tr>
+                        <td>25</td>
+                        <td>DerMitDemWurm </td>
+                        <td>5.776</td>
+                        <td>29.127</td>
+                        <td>34.903</td>
+                        <td>20</td>
+                    </tr>  <tr>
+                        <td>26</td>
+                        <td>DonGarfield <i>[Popplers]</i></td>
+                        <td>3.245</td>
+                        <td>30.382</td>
+                        <td>33.627</td>
+                        <td>18</td>
+                    </tr>  <tr>
+                        <td>27</td>
+                        <td>edit <i>[WFG]</i></td>
+                        <td>5.246</td>
+                        <td>23.683</td>
+                        <td>28.929</td>
+                        <td>20</td>
+                    </tr>  <tr>
+                        <td>28</td>
+                        <td>some_one <i>[Speicher]</i></td>
+                        <td>2.475</td>
+                        <td>22.180</td>
+                        <td>24.655</td>
+                        <td>19</td>
+                    </tr>  <tr>
+                        <td>29</td>
+                        <td>PortgasD.Ace <i>[OnePiece]</i></td>
+                        <td>2.031</td>
+                        <td>18.074</td>
+                        <td>20.105</td>
+                        <td>20</td>
+                    </tr>  <tr>
+                        <td>30</td>
+                        <td>gmail <i>[D-W]</i></td>
+                        <td>2.327</td>
+                        <td>12.214</td>
+                        <td>14.541</td>
+                        <td>11</td>
+                    </tr>  <tr>
+                        <td>31</td>
+                        <td>O-O </td>
+                        <td>2.318</td>
+                        <td>12.029</td>
+                        <td>14.347</td>
+                        <td>5</td>
+                    </tr>  <tr>
+                        <td>32</td>
+                        <td>Buttercup <i>[PUFF]</i></td>
+                        <td>6.888</td>
+                        <td>6.449</td>
+                        <td>13.337</td>
+                        <td>20</td>
+                    </tr>  <tr>
+                        <td>33</td>
+                        <td>Parge_Lenis </td>
+                        <td>9.969</td>
+                        <td>2.052</td>
+                        <td>12.021</td>
+                        <td>1</td>
+                    </tr>  <tr>
+                        <td>34</td>
+                        <td>frodxin </td>
+                        <td>5.575</td>
+                        <td>5.323</td>
+                        <td>10.898</td>
+                        <td>2</td>
+                    </tr>  <tr>
+                        <td>35</td>
+                        <td>Zu_stressig_inaktiv <i>[STRESS]</i></td>
+                        <td>3.081</td>
+                        <td>6.874</td>
+                        <td>9.955</td>
+                        <td>3</td>
+                    </tr>  <tr>
+                        <td>36</td>
+                        <td>Inaktiv </td>
+                        <td>937</td>
+                        <td>8.851</td>
+                        <td>9.788</td>
+                        <td>12</td>
+                    </tr>  <tr>
+                        <td>37</td>
+                        <td>Oschi </td>
+                        <td>7.701</td>
+                        <td>1.971</td>
+                        <td>9.672</td>
+                        <td>1</td>
+                    </tr>  <tr>
+                        <td>38</td>
+                        <td>CrImE <i>[-DU-]</i></td>
+                        <td>4.023</td>
+                        <td>3.757</td>
+                        <td>7.780</td>
+                        <td>1</td>
+                    </tr>  <tr>
+                        <td>39</td>
+                        <td>DaBu </td>
+                        <td>4.566</td>
+                        <td>3.133</td>
+                        <td>7.699</td>
+                        <td>1</td>
+                    </tr>  <tr>
+                        <td>40</td>
+                        <td>Farm <i>[-Hell-F-]</i></td>
+                        <td>1.041</td>
+                        <td>6.191</td>
+                        <td>7.232</td>
+                        <td>6</td>
+                    </tr>  <tr>
+                        <td>41</td>
+                        <td>Klospulung </td>
+                        <td>856</td>
+                        <td>5.542</td>
+                        <td>6.398</td>
+                        <td>8</td>
+                    </tr>  <tr>
+                        <td>42</td>
+                        <td>Amnesia_Haze </td>
+                        <td>942</td>
+                        <td>5.067</td>
+                        <td>6.009</td>
+                        <td>8</td>
+                    </tr>  <tr>
+                        <td>43</td>
+                        <td>Amdarion </td>
+                        <td>1.122</td>
+                        <td>4.602</td>
+                        <td>5.724</td>
+                        <td>4</td>
+                    </tr>  <tr>
+                        <td>44</td>
+                        <td>soli </td>
+                        <td>753</td>
+                        <td>4.725</td>
+                        <td>5.478</td>
+                        <td>8</td>
+                    </tr>  <tr>
+                        <td>45</td>
+                        <td>Bugi2 </td>
+                        <td>1.327</td>
+                        <td>3.564</td>
+                        <td>4.891</td>
+                        <td>10</td>
+                    </tr>  <tr>
+                        <td>46</td>
+                        <td>Tablettenkoenig <i>[HART]</i></td>
+                        <td>686</td>
+                        <td>3.944</td>
+                        <td>4.630</td>
+                        <td>12</td>
+                    </tr>  <tr>
+                        <td>47</td>
+                        <td>OUZO <i>[DH]</i></td>
+                        <td>594</td>
+                        <td>3.580</td>
+                        <td>4.174</td>
+                        <td>8</td>
+                    </tr>  <tr>
+                        <td>48</td>
+                        <td>DaSBiEr <i>[SuSt]</i></td>
+                        <td>224</td>
+                        <td>3.313</td>
+                        <td>3.537</td>
+                        <td>20</td>
+                    </tr>  <tr>
+                        <td>49</td>
+                        <td>Jury <i>[SuSt]</i></td>
+                        <td>825</td>
+                        <td>1.844</td>
+                        <td>2.669</td>
+                        <td>1</td>
+                    </tr>  <tr>
+                        <td>50</td>
+                        <td>BS3 </td>
+                        <td>558</td>
+                        <td>1.687</td>
+                        <td>2.245</td>
+                        <td>3</td>
+                    </tr>  <tr>
+                        <td>51</td>
+                        <td>Molka </td>
+                        <td>711</td>
+                        <td>1.154</td>
+                        <td>1.865</td>
+                        <td>1</td>
+                    </tr>  <tr>
+                        <td>52</td>
+                        <td>Isildur </td>
+                        <td>786</td>
+                        <td>246</td>
+                        <td>1.032</td>
+                        <td>1</td>
+                    </tr>  <tr>
+                        <td>53</td>
+                        <td>Black-Templars </td>
+                        <td>69</td>
+                        <td>900</td>
+                        <td>969</td>
+                        <td>1</td>
+                    </tr>  <tr>
+                        <td>54</td>
+                        <td>dikata </td>
+                        <td>60</td>
+                        <td>498</td>
+                        <td>558</td>
+                        <td>1</td>
+                    </tr>  <tr>
+                        <td>55</td>
+                        <td>Moppel </td>
+                        <td>108</td>
+                        <td>423</td>
+                        <td>531</td>
+                        <td>2</td>
+                    </tr>  <tr>
+                        <td>56</td>
+                        <td>Duckzilla </td>
+                        <td>55</td>
+                        <td>436</td>
+                        <td>491</td>
+                        <td>1</td>
+                    </tr>  <tr>
+                        <td>57</td>
+                        <td>Hansi </td>
+                        <td>30</td>
+                        <td>342</td>
+                        <td>372</td>
+                        <td>1</td>
+                    </tr>  <tr>
+                        <td>58</td>
+                        <td>Max2 </td>
+                        <td>3</td>
+                        <td>284</td>
+                        <td>287</td>
+                        <td>1</td>
+                    </tr>  <tr>
+                        <td>59</td>
+                        <td>verwirrt </td>
+                        <td>56</td>
+                        <td>185</td>
+                        <td>241</td>
+                        <td>1</td>
+                    </tr>  <tr>
+                        <td>60</td>
+                        <td>bomb </td>
+                        <td>0</td>
+                        <td>166</td>
+                        <td>166</td>
+                        <td>1</td>
+                    </tr>  <tr>
+                        <td>61</td>
+                        <td>MrBl3nd </td>
+                        <td>3</td>
+                        <td>150</td>
+                        <td>153</td>
+                        <td>1</td>
+                    </tr>  <tr>
+                        <td>62</td>
+                        <td>trolli </td>
+                        <td>1</td>
+                        <td>146</td>
+                        <td>147</td>
+                        <td>1</td>
+                    </tr>  <tr>
+                        <td>63</td>
+                        <td>Silent </td>
+                        <td>0</td>
+                        <td>127</td>
+                        <td>127</td>
+                        <td>1</td>
+                    </tr>  <tr>
+                        <td>64</td>
+                        <td>khaza </td>
+                        <td>0</td>
+                        <td>97</td>
+                        <td>97</td>
+                        <td>1</td>
+                    </tr>  <tr>
+                        <td>65</td>
+                        <td>girl </td>
+                        <td>1</td>
+                        <td>89</td>
+                        <td>90</td>
+                        <td>1</td>
+                    </tr>  <tr>
+                        <td>66</td>
+                        <td>HuHu </td>
+                        <td>0</td>
+                        <td>82</td>
+                        <td>82</td>
+                        <td>1</td>
+                    </tr>  <tr>
+                        <td>67</td>
+                        <td>banger </td>
+                        <td>1</td>
+                        <td>73</td>
+                        <td>74</td>
+                        <td>1</td>
+                    </tr>  <tr>
+                        <td>68</td>
+                        <td>leufra </td>
+                        <td>0</td>
+                        <td>67</td>
+                        <td>67</td>
+                        <td>1</td>
+                    </tr>  <tr>
+                        <td>69</td>
+                        <td>OldMan </td>
+                        <td>0</td>
+                        <td>67</td>
+                        <td>67</td>
+                        <td>1</td>
+                    </tr>  <tr>
+                        <td>70</td>
+                        <td>riot </td>
+                        <td>0</td>
+                        <td>67</td>
+                        <td>67</td>
+                        <td>1</td>
+                    </tr>  <tr>
+                        <td>71</td>
+                        <td>extinction </td>
+                        <td>0</td>
+                        <td>67</td>
+                        <td>67</td>
+                        <td>1</td>
+                    </tr>  <tr>
+                        <td>72</td>
+                        <td>Freakman </td>
+                        <td>0</td>
+                        <td>67</td>
+                        <td>67</td>
+                        <td>1</td>
+                    </tr>  <tr>
+                        <td>73</td>
+                        <td>rookie </td>
+                        <td>0</td>
+                        <td>67</td>
+                        <td>67</td>
+                        <td>1</td>
+                    </tr>  <tr>
+                        <td>74</td>
+                        <td>blues </td>
+                        <td>0</td>
+                        <td>67</td>
+                        <td>67</td>
+                        <td>1</td>
+                    </tr></table>    <table class="stats box" style="display: none;" id="playerresearchpoints">
+                    <tr>
+                        <th colspan="7">Spieler nach Forschungspunkten</th>
+                    </tr>
+                    <tr>
+                        <td class="dark">#</td>
+                        <td class="dark">Name</td>
+                        <td class="dark">Punkte Forschung</td>
+                        <td class="dark">Punkte Planeten</td>
+                        <td class="dark">Punkte Gesamt</td>
+                        <td class="dark">Anzahl Planeten</td>
+                    </tr>  <tr>
+                        <td>1</td>
+                        <td>EiS <i>[DieHorde]</i></td>
+                        <td>14.963</td>
+                        <td>96.148</td>
+                        <td>111.111</td>
+                        <td>20</td>
+                    </tr>  <tr>
+                        <td>2</td>
+                        <td>Kobra018 </td>
+                        <td>14.794</td>
+                        <td>29.860</td>
+                        <td>44.654</td>
+                        <td>20</td>
+                    </tr>  <tr>
+                        <td>3</td>
+                        <td>Abes182 <i>[DieHorde]</i></td>
+                        <td>11.369</td>
+                        <td>84.163</td>
+                        <td>95.532</td>
+                        <td>20</td>
+                    </tr>  <tr>
+                        <td>4</td>
+                        <td>powron <i>[DieHorde]</i></td>
+                        <td>11.040</td>
+                        <td>52.184</td>
+                        <td>63.224</td>
+                        <td>20</td>
+                    </tr>  <tr>
+                        <td>5</td>
+                        <td>Wolfhearth <i>[Wild-C]</i></td>
+                        <td>10.383</td>
+                        <td>35.821</td>
+                        <td>46.204</td>
+                        <td>20</td>
+                    </tr>  <tr>
+                        <td>6</td>
+                        <td>ScheichVomDeich <i>[Hell]</i></td>
+                        <td>10.225</td>
+                        <td>66.522</td>
+                        <td>76.747</td>
+                        <td>20</td>
+                    </tr>  <tr>
+                        <td>7</td>
+                        <td>Parge_Lenis </td>
+                        <td>9.969</td>
+                        <td>2.052</td>
+                        <td>12.021</td>
+                        <td>1</td>
+                    </tr>  <tr>
+                        <td>8</td>
+                        <td>42na </td>
+                        <td>9.849</td>
+                        <td>62.405</td>
+                        <td>72.254</td>
+                        <td>20</td>
+                    </tr>  <tr>
+                        <td>9</td>
+                        <td>lvach <i>[Wild-C]</i></td>
+                        <td>9.586</td>
+                        <td>62.957</td>
+                        <td>72.543</td>
+                        <td>20</td>
+                    </tr>  <tr>
+                        <td>10</td>
+                        <td>MidNighT </td>
+                        <td>9.367</td>
+                        <td>69.911</td>
+                        <td>79.278</td>
+                        <td>20</td>
+                    </tr>  <tr>
+                        <td>11</td>
+                        <td>Andi_Latte <i>[-sv-]</i></td>
+                        <td>9.235</td>
+                        <td>73.917</td>
+                        <td>83.152</td>
+                        <td>20</td>
+                    </tr>  <tr>
+                        <td>12</td>
+                        <td>ElBarto <i>[Wild-C]</i></td>
+                        <td>9.101</td>
+                        <td>83.354</td>
+                        <td>92.455</td>
+                        <td>20</td>
+                    </tr>  <tr>
+                        <td>13</td>
+                        <td>Schafi <i>[DieHorde]</i></td>
+                        <td>8.168</td>
+                        <td>57.022</td>
+                        <td>65.190</td>
+                        <td>20</td>
+                    </tr>  <tr>
+                        <td>14</td>
+                        <td>Schnuffel <i>[Hell]</i></td>
+                        <td>8.016</td>
+                        <td>38.980</td>
+                        <td>46.996</td>
+                        <td>20</td>
+                    </tr>  <tr>
+                        <td>15</td>
+                        <td>Oschi </td>
+                        <td>7.701</td>
+                        <td>1.971</td>
+                        <td>9.672</td>
+                        <td>1</td>
+                    </tr>  <tr>
+                        <td>16</td>
+                        <td>Ted </td>
+                        <td>7.335</td>
+                        <td>31.395</td>
+                        <td>38.730</td>
+                        <td>20</td>
+                    </tr>  <tr>
+                        <td>17</td>
+                        <td>RoniX <i>[Wild-C]</i></td>
+                        <td>6.980</td>
+                        <td>61.531</td>
+                        <td>68.511</td>
+                        <td>20</td>
+                    </tr>  <tr>
+                        <td>18</td>
+                        <td>Buttercup <i>[PUFF]</i></td>
+                        <td>6.888</td>
+                        <td>6.449</td>
+                        <td>13.337</td>
+                        <td>20</td>
+                    </tr>  <tr>
+                        <td>19</td>
+                        <td>inaktivefarm <i>[Wild-C]</i></td>
+                        <td>6.869</td>
+                        <td>59.552</td>
+                        <td>66.421</td>
+                        <td>20</td>
+                    </tr>  <tr>
+                        <td>20</td>
+                        <td>DevilsChild <i>[DieHorde]</i></td>
+                        <td>6.822</td>
+                        <td>59.388</td>
+                        <td>66.210</td>
+                        <td>20</td>
+                    </tr>  <tr>
+                        <td>21</td>
+                        <td>mk525 </td>
+                        <td>6.607</td>
+                        <td>37.915</td>
+                        <td>44.522</td>
+                        <td>20</td>
+                    </tr>  <tr>
+                        <td>22</td>
+                        <td>IBD </td>
+                        <td>6.549</td>
+                        <td>50.413</td>
+                        <td>56.962</td>
+                        <td>15</td>
+                    </tr>  <tr>
+                        <td>23</td>
+                        <td>DrSpacy <i>[Wild-C]</i></td>
+                        <td>6.539</td>
+                        <td>43.583</td>
+                        <td>50.122</td>
+                        <td>20</td>
+                    </tr>  <tr>
+                        <td>24</td>
+                        <td>DerMitDemWurm </td>
+                        <td>5.776</td>
+                        <td>29.127</td>
+                        <td>34.903</td>
+                        <td>20</td>
+                    </tr>  <tr>
+                        <td>25</td>
+                        <td>frodxin </td>
+                        <td>5.575</td>
+                        <td>5.323</td>
+                        <td>10.898</td>
+                        <td>2</td>
+                    </tr>  <tr>
+                        <td>26</td>
+                        <td>woeh <i>[DieHorde]</i></td>
+                        <td>5.435</td>
+                        <td>35.935</td>
+                        <td>41.370</td>
+                        <td>20</td>
+                    </tr>  <tr>
+                        <td>27</td>
+                        <td>frisbee <i>[pimp]</i></td>
+                        <td>5.336</td>
+                        <td>60.383</td>
+                        <td>65.719</td>
+                        <td>20</td>
+                    </tr>  <tr>
+                        <td>28</td>
+                        <td>edit <i>[WFG]</i></td>
+                        <td>5.246</td>
+                        <td>23.683</td>
+                        <td>28.929</td>
+                        <td>20</td>
+                    </tr>  <tr>
+                        <td>29</td>
+                        <td>XxX </td>
+                        <td>4.812</td>
+                        <td>44.075</td>
+                        <td>48.887</td>
+                        <td>20</td>
+                    </tr>  <tr>
+                        <td>30</td>
+                        <td>DaBu </td>
+                        <td>4.566</td>
+                        <td>3.133</td>
+                        <td>7.699</td>
+                        <td>1</td>
+                    </tr>  <tr>
+                        <td>31</td>
+                        <td>CrImE <i>[-DU-]</i></td>
+                        <td>4.023</td>
+                        <td>3.757</td>
+                        <td>7.780</td>
+                        <td>1</td>
+                    </tr>  <tr>
+                        <td>32</td>
+                        <td>WhiteBeard <i>[OnePiece]</i></td>
+                        <td>3.681</td>
+                        <td>71.822</td>
+                        <td>75.503</td>
+                        <td>20</td>
+                    </tr>  <tr>
+                        <td>33</td>
+                        <td>DonGarfield <i>[Popplers]</i></td>
+                        <td>3.245</td>
+                        <td>30.382</td>
+                        <td>33.627</td>
+                        <td>18</td>
+                    </tr>  <tr>
+                        <td>34</td>
+                        <td>Zu_stressig_inaktiv <i>[STRESS]</i></td>
+                        <td>3.081</td>
+                        <td>6.874</td>
+                        <td>9.955</td>
+                        <td>3</td>
+                    </tr>  <tr>
+                        <td>35</td>
+                        <td>some_one <i>[Speicher]</i></td>
+                        <td>2.475</td>
+                        <td>22.180</td>
+                        <td>24.655</td>
+                        <td>19</td>
+                    </tr>  <tr>
+                        <td>36</td>
+                        <td>gmail <i>[D-W]</i></td>
+                        <td>2.327</td>
+                        <td>12.214</td>
+                        <td>14.541</td>
+                        <td>11</td>
+                    </tr>  <tr>
+                        <td>37</td>
+                        <td>O-O </td>
+                        <td>2.318</td>
+                        <td>12.029</td>
+                        <td>14.347</td>
+                        <td>5</td>
+                    </tr>  <tr>
+                        <td>38</td>
+                        <td>PortgasD.Ace <i>[OnePiece]</i></td>
+                        <td>2.031</td>
+                        <td>18.074</td>
+                        <td>20.105</td>
+                        <td>20</td>
+                    </tr>  <tr>
+                        <td>39</td>
+                        <td>Bugi2 </td>
+                        <td>1.327</td>
+                        <td>3.564</td>
+                        <td>4.891</td>
+                        <td>10</td>
+                    </tr>  <tr>
+                        <td>40</td>
+                        <td>Amdarion </td>
+                        <td>1.122</td>
+                        <td>4.602</td>
+                        <td>5.724</td>
+                        <td>4</td>
+                    </tr>  <tr>
+                        <td>41</td>
+                        <td>Farm <i>[-Hell-F-]</i></td>
+                        <td>1.041</td>
+                        <td>6.191</td>
+                        <td>7.232</td>
+                        <td>6</td>
+                    </tr>  <tr>
+                        <td>42</td>
+                        <td>Amnesia_Haze </td>
+                        <td>942</td>
+                        <td>5.067</td>
+                        <td>6.009</td>
+                        <td>8</td>
+                    </tr>  <tr>
+                        <td>43</td>
+                        <td>Inaktiv </td>
+                        <td>937</td>
+                        <td>8.851</td>
+                        <td>9.788</td>
+                        <td>12</td>
+                    </tr>  <tr>
+                        <td>44</td>
+                        <td>Klospulung </td>
+                        <td>856</td>
+                        <td>5.542</td>
+                        <td>6.398</td>
+                        <td>8</td>
+                    </tr>  <tr>
+                        <td>45</td>
+                        <td>Jury <i>[SuSt]</i></td>
+                        <td>825</td>
+                        <td>1.844</td>
+                        <td>2.669</td>
+                        <td>1</td>
+                    </tr>  <tr>
+                        <td>46</td>
+                        <td>Isildur </td>
+                        <td>786</td>
+                        <td>246</td>
+                        <td>1.032</td>
+                        <td>1</td>
+                    </tr>  <tr>
+                        <td>47</td>
+                        <td>soli </td>
+                        <td>753</td>
+                        <td>4.725</td>
+                        <td>5.478</td>
+                        <td>8</td>
+                    </tr>  <tr>
+                        <td>48</td>
+                        <td>Molka </td>
+                        <td>711</td>
+                        <td>1.154</td>
+                        <td>1.865</td>
+                        <td>1</td>
+                    </tr>  <tr>
+                        <td>49</td>
+                        <td>Tablettenkoenig <i>[HART]</i></td>
+                        <td>686</td>
+                        <td>3.944</td>
+                        <td>4.630</td>
+                        <td>12</td>
+                    </tr>  <tr>
+                        <td>50</td>
+                        <td>OUZO <i>[DH]</i></td>
+                        <td>594</td>
+                        <td>3.580</td>
+                        <td>4.174</td>
+                        <td>8</td>
+                    </tr>  <tr>
+                        <td>51</td>
+                        <td>BS3 </td>
+                        <td>558</td>
+                        <td>1.687</td>
+                        <td>2.245</td>
+                        <td>3</td>
+                    </tr>  <tr>
+                        <td>52</td>
+                        <td>DaSBiEr <i>[SuSt]</i></td>
+                        <td>224</td>
+                        <td>3.313</td>
+                        <td>3.537</td>
+                        <td>20</td>
+                    </tr>  <tr>
+                        <td>53</td>
+                        <td>Moppel </td>
+                        <td>108</td>
+                        <td>423</td>
+                        <td>531</td>
+                        <td>2</td>
+                    </tr>  <tr>
+                        <td>54</td>
+                        <td>Black-Templars </td>
+                        <td>69</td>
+                        <td>900</td>
+                        <td>969</td>
+                        <td>1</td>
+                    </tr>  <tr>
+                        <td>55</td>
+                        <td>dikata </td>
+                        <td>60</td>
+                        <td>498</td>
+                        <td>558</td>
+                        <td>1</td>
+                    </tr>  <tr>
+                        <td>56</td>
+                        <td>verwirrt </td>
+                        <td>56</td>
+                        <td>185</td>
+                        <td>241</td>
+                        <td>1</td>
+                    </tr>  <tr>
+                        <td>57</td>
+                        <td>Duckzilla </td>
+                        <td>55</td>
+                        <td>436</td>
+                        <td>491</td>
+                        <td>1</td>
+                    </tr>  <tr>
+                        <td>58</td>
+                        <td>Hansi </td>
+                        <td>30</td>
+                        <td>342</td>
+                        <td>372</td>
+                        <td>1</td>
+                    </tr>  <tr>
+                        <td>59</td>
+                        <td>Max2 </td>
+                        <td>3</td>
+                        <td>284</td>
+                        <td>287</td>
+                        <td>1</td>
+                    </tr>  <tr>
+                        <td>60</td>
+                        <td>MrBl3nd </td>
+                        <td>3</td>
+                        <td>150</td>
+                        <td>153</td>
+                        <td>1</td>
+                    </tr>  <tr>
+                        <td>61</td>
+                        <td>trolli </td>
+                        <td>1</td>
+                        <td>146</td>
+                        <td>147</td>
+                        <td>1</td>
+                    </tr>  <tr>
+                        <td>62</td>
+                        <td>girl </td>
+                        <td>1</td>
+                        <td>89</td>
+                        <td>90</td>
+                        <td>1</td>
+                    </tr>  <tr>
+                        <td>63</td>
+                        <td>banger </td>
+                        <td>1</td>
+                        <td>73</td>
+                        <td>74</td>
+                        <td>1</td>
+                    </tr>  <tr>
+                        <td>64</td>
+                        <td>rookie </td>
+                        <td>0</td>
+                        <td>67</td>
+                        <td>67</td>
+                        <td>1</td>
+                    </tr>  <tr>
+                        <td>65</td>
+                        <td>extinction </td>
+                        <td>0</td>
+                        <td>67</td>
+                        <td>67</td>
+                        <td>1</td>
+                    </tr>  <tr>
+                        <td>66</td>
+                        <td>blues </td>
+                        <td>0</td>
+                        <td>67</td>
+                        <td>67</td>
+                        <td>1</td>
+                    </tr>  <tr>
+                        <td>67</td>
+                        <td>Freakman </td>
+                        <td>0</td>
+                        <td>67</td>
+                        <td>67</td>
+                        <td>1</td>
+                    </tr>  <tr>
+                        <td>68</td>
+                        <td>leufra </td>
+                        <td>0</td>
+                        <td>67</td>
+                        <td>67</td>
+                        <td>1</td>
+                    </tr>  <tr>
+                        <td>69</td>
+                        <td>riot </td>
+                        <td>0</td>
+                        <td>67</td>
+                        <td>67</td>
+                        <td>1</td>
+                    </tr>  <tr>
+                        <td>70</td>
+                        <td>khaza </td>
+                        <td>0</td>
+                        <td>97</td>
+                        <td>97</td>
+                        <td>1</td>
+                    </tr>  <tr>
+                        <td>71</td>
+                        <td>HuHu </td>
+                        <td>0</td>
+                        <td>82</td>
+                        <td>82</td>
+                        <td>1</td>
+                    </tr>  <tr>
+                        <td>72</td>
+                        <td>bomb </td>
+                        <td>0</td>
+                        <td>166</td>
+                        <td>166</td>
+                        <td>1</td>
+                    </tr>  <tr>
+                        <td>73</td>
+                        <td>Silent </td>
+                        <td>0</td>
+                        <td>127</td>
+                        <td>127</td>
+                        <td>1</td>
+                    </tr>  <tr>
+                        <td>74</td>
+                        <td>OldMan </td>
+                        <td>0</td>
+                        <td>67</td>
+                        <td>67</td>
+                        <td>1</td>
+                    </tr></table>    <table class="stats box" style="display: none;" id="playerplanetpoints">
+                    <tr>
+                        <th colspan="7">Spieler nach Planetenpunkten</th>
+                    </tr>
+                    <tr>
+                        <td class="dark">#</td>
+                        <td class="dark">Name</td>
+                        <td class="dark">Punkte Forschung</td>
+                        <td class="dark">Punkte Planeten</td>
+                        <td class="dark">Punkte Gesamt</td>
+                        <td class="dark">Anzahl Planeten</td>
+                    </tr>  <tr>
+                        <td>1</td>
+                        <td>EiS <i>[DieHorde]</i></td>
+                        <td>14.963</td>
+                        <td>96.148</td>
+                        <td>111.111</td>
+                        <td>20</td>
+                    </tr>  <tr>
+                        <td>2</td>
+                        <td>Abes182 <i>[DieHorde]</i></td>
+                        <td>11.369</td>
+                        <td>84.163</td>
+                        <td>95.532</td>
+                        <td>20</td>
+                    </tr>  <tr>
+                        <td>3</td>
+                        <td>ElBarto <i>[Wild-C]</i></td>
+                        <td>9.101</td>
+                        <td>83.354</td>
+                        <td>92.455</td>
+                        <td>20</td>
+                    </tr>  <tr>
+                        <td>4</td>
+                        <td>Andi_Latte <i>[-sv-]</i></td>
+                        <td>9.235</td>
+                        <td>73.917</td>
+                        <td>83.152</td>
+                        <td>20</td>
+                    </tr>  <tr>
+                        <td>5</td>
+                        <td>WhiteBeard <i>[OnePiece]</i></td>
+                        <td>3.681</td>
+                        <td>71.822</td>
+                        <td>75.503</td>
+                        <td>20</td>
+                    </tr>  <tr>
+                        <td>6</td>
+                        <td>MidNighT </td>
+                        <td>9.367</td>
+                        <td>69.911</td>
+                        <td>79.278</td>
+                        <td>20</td>
+                    </tr>  <tr>
+                        <td>7</td>
+                        <td>ScheichVomDeich <i>[Hell]</i></td>
+                        <td>10.225</td>
+                        <td>66.522</td>
+                        <td>76.747</td>
+                        <td>20</td>
+                    </tr>  <tr>
+                        <td>8</td>
+                        <td>lvach <i>[Wild-C]</i></td>
+                        <td>9.586</td>
+                        <td>62.957</td>
+                        <td>72.543</td>
+                        <td>20</td>
+                    </tr>  <tr>
+                        <td>9</td>
+                        <td>42na </td>
+                        <td>9.849</td>
+                        <td>62.405</td>
+                        <td>72.254</td>
+                        <td>20</td>
+                    </tr>  <tr>
+                        <td>10</td>
+                        <td>RoniX <i>[Wild-C]</i></td>
+                        <td>6.980</td>
+                        <td>61.531</td>
+                        <td>68.511</td>
+                        <td>20</td>
+                    </tr>  <tr>
+                        <td>11</td>
+                        <td>frisbee <i>[pimp]</i></td>
+                        <td>5.336</td>
+                        <td>60.383</td>
+                        <td>65.719</td>
+                        <td>20</td>
+                    </tr>  <tr>
+                        <td>12</td>
+                        <td>inaktivefarm <i>[Wild-C]</i></td>
+                        <td>6.869</td>
+                        <td>59.552</td>
+                        <td>66.421</td>
+                        <td>20</td>
+                    </tr>  <tr>
+                        <td>13</td>
+                        <td>DevilsChild <i>[DieHorde]</i></td>
+                        <td>6.822</td>
+                        <td>59.388</td>
+                        <td>66.210</td>
+                        <td>20</td>
+                    </tr>  <tr>
+                        <td>14</td>
+                        <td>Schafi <i>[DieHorde]</i></td>
+                        <td>8.168</td>
+                        <td>57.022</td>
+                        <td>65.190</td>
+                        <td>20</td>
+                    </tr>  <tr>
+                        <td>15</td>
+                        <td>powron <i>[DieHorde]</i></td>
+                        <td>11.040</td>
+                        <td>52.184</td>
+                        <td>63.224</td>
+                        <td>20</td>
+                    </tr>  <tr>
+                        <td>16</td>
+                        <td>IBD </td>
+                        <td>6.549</td>
+                        <td>50.413</td>
+                        <td>56.962</td>
+                        <td>15</td>
+                    </tr>  <tr>
+                        <td>17</td>
+                        <td>XxX </td>
+                        <td>4.812</td>
+                        <td>44.075</td>
+                        <td>48.887</td>
+                        <td>20</td>
+                    </tr>  <tr>
+                        <td>18</td>
+                        <td>DrSpacy <i>[Wild-C]</i></td>
+                        <td>6.539</td>
+                        <td>43.583</td>
+                        <td>50.122</td>
+                        <td>20</td>
+                    </tr>  <tr>
+                        <td>19</td>
+                        <td>Schnuffel <i>[Hell]</i></td>
+                        <td>8.016</td>
+                        <td>38.980</td>
+                        <td>46.996</td>
+                        <td>20</td>
+                    </tr>  <tr>
+                        <td>20</td>
+                        <td>mk525 </td>
+                        <td>6.607</td>
+                        <td>37.915</td>
+                        <td>44.522</td>
+                        <td>20</td>
+                    </tr>  <tr>
+                        <td>21</td>
+                        <td>woeh <i>[DieHorde]</i></td>
+                        <td>5.435</td>
+                        <td>35.935</td>
+                        <td>41.370</td>
+                        <td>20</td>
+                    </tr>  <tr>
+                        <td>22</td>
+                        <td>Wolfhearth <i>[Wild-C]</i></td>
+                        <td>10.383</td>
+                        <td>35.821</td>
+                        <td>46.204</td>
+                        <td>20</td>
+                    </tr>  <tr>
+                        <td>23</td>
+                        <td>Ted </td>
+                        <td>7.335</td>
+                        <td>31.395</td>
+                        <td>38.730</td>
+                        <td>20</td>
+                    </tr>  <tr>
+                        <td>24</td>
+                        <td>DonGarfield <i>[Popplers]</i></td>
+                        <td>3.245</td>
+                        <td>30.382</td>
+                        <td>33.627</td>
+                        <td>18</td>
+                    </tr>  <tr>
+                        <td>25</td>
+                        <td>Kobra018 </td>
+                        <td>14.794</td>
+                        <td>29.860</td>
+                        <td>44.654</td>
+                        <td>20</td>
+                    </tr>  <tr>
+                        <td>26</td>
+                        <td>DerMitDemWurm </td>
+                        <td>5.776</td>
+                        <td>29.127</td>
+                        <td>34.903</td>
+                        <td>20</td>
+                    </tr>  <tr>
+                        <td>27</td>
+                        <td>edit <i>[WFG]</i></td>
+                        <td>5.246</td>
+                        <td>23.683</td>
+                        <td>28.929</td>
+                        <td>20</td>
+                    </tr>  <tr>
+                        <td>28</td>
+                        <td>some_one <i>[Speicher]</i></td>
+                        <td>2.475</td>
+                        <td>22.180</td>
+                        <td>24.655</td>
+                        <td>19</td>
+                    </tr>  <tr>
+                        <td>29</td>
+                        <td>PortgasD.Ace <i>[OnePiece]</i></td>
+                        <td>2.031</td>
+                        <td>18.074</td>
+                        <td>20.105</td>
+                        <td>20</td>
+                    </tr>  <tr>
+                        <td>30</td>
+                        <td>gmail <i>[D-W]</i></td>
+                        <td>2.327</td>
+                        <td>12.214</td>
+                        <td>14.541</td>
+                        <td>11</td>
+                    </tr>  <tr>
+                        <td>31</td>
+                        <td>O-O </td>
+                        <td>2.318</td>
+                        <td>12.029</td>
+                        <td>14.347</td>
+                        <td>5</td>
+                    </tr>  <tr>
+                        <td>32</td>
+                        <td>Inaktiv </td>
+                        <td>937</td>
+                        <td>8.851</td>
+                        <td>9.788</td>
+                        <td>12</td>
+                    </tr>  <tr>
+                        <td>33</td>
+                        <td>Zu_stressig_inaktiv <i>[STRESS]</i></td>
+                        <td>3.081</td>
+                        <td>6.874</td>
+                        <td>9.955</td>
+                        <td>3</td>
+                    </tr>  <tr>
+                        <td>34</td>
+                        <td>Buttercup <i>[PUFF]</i></td>
+                        <td>6.888</td>
+                        <td>6.449</td>
+                        <td>13.337</td>
+                        <td>20</td>
+                    </tr>  <tr>
+                        <td>35</td>
+                        <td>Farm <i>[-Hell-F-]</i></td>
+                        <td>1.041</td>
+                        <td>6.191</td>
+                        <td>7.232</td>
+                        <td>6</td>
+                    </tr>  <tr>
+                        <td>36</td>
+                        <td>Klospulung </td>
+                        <td>856</td>
+                        <td>5.542</td>
+                        <td>6.398</td>
+                        <td>8</td>
+                    </tr>  <tr>
+                        <td>37</td>
+                        <td>frodxin </td>
+                        <td>5.575</td>
+                        <td>5.323</td>
+                        <td>10.898</td>
+                        <td>2</td>
+                    </tr>  <tr>
+                        <td>38</td>
+                        <td>Amnesia_Haze </td>
+                        <td>942</td>
+                        <td>5.067</td>
+                        <td>6.009</td>
+                        <td>8</td>
+                    </tr>  <tr>
+                        <td>39</td>
+                        <td>soli </td>
+                        <td>753</td>
+                        <td>4.725</td>
+                        <td>5.478</td>
+                        <td>8</td>
+                    </tr>  <tr>
+                        <td>40</td>
+                        <td>Amdarion </td>
+                        <td>1.122</td>
+                        <td>4.602</td>
+                        <td>5.724</td>
+                        <td>4</td>
+                    </tr>  <tr>
+                        <td>41</td>
+                        <td>Tablettenkoenig <i>[HART]</i></td>
+                        <td>686</td>
+                        <td>3.944</td>
+                        <td>4.630</td>
+                        <td>12</td>
+                    </tr>  <tr>
+                        <td>42</td>
+                        <td>CrImE <i>[-DU-]</i></td>
+                        <td>4.023</td>
+                        <td>3.757</td>
+                        <td>7.780</td>
+                        <td>1</td>
+                    </tr>  <tr>
+                        <td>43</td>
+                        <td>OUZO <i>[DH]</i></td>
+                        <td>594</td>
+                        <td>3.580</td>
+                        <td>4.174</td>
+                        <td>8</td>
+                    </tr>  <tr>
+                        <td>44</td>
+                        <td>Bugi2 </td>
+                        <td>1.327</td>
+                        <td>3.564</td>
+                        <td>4.891</td>
+                        <td>10</td>
+                    </tr>  <tr>
+                        <td>45</td>
+                        <td>DaSBiEr <i>[SuSt]</i></td>
+                        <td>224</td>
+                        <td>3.313</td>
+                        <td>3.537</td>
+                        <td>20</td>
+                    </tr>  <tr>
+                        <td>46</td>
+                        <td>DaBu </td>
+                        <td>4.566</td>
+                        <td>3.133</td>
+                        <td>7.699</td>
+                        <td>1</td>
+                    </tr>  <tr>
+                        <td>47</td>
+                        <td>Parge_Lenis </td>
+                        <td>9.969</td>
+                        <td>2.052</td>
+                        <td>12.021</td>
+                        <td>1</td>
+                    </tr>  <tr>
+                        <td>48</td>
+                        <td>Oschi </td>
+                        <td>7.701</td>
+                        <td>1.971</td>
+                        <td>9.672</td>
+                        <td>1</td>
+                    </tr>  <tr>
+                        <td>49</td>
+                        <td>Jury <i>[SuSt]</i></td>
+                        <td>825</td>
+                        <td>1.844</td>
+                        <td>2.669</td>
+                        <td>1</td>
+                    </tr>  <tr>
+                        <td>50</td>
+                        <td>BS3 </td>
+                        <td>558</td>
+                        <td>1.687</td>
+                        <td>2.245</td>
+                        <td>3</td>
+                    </tr>  <tr>
+                        <td>51</td>
+                        <td>Molka </td>
+                        <td>711</td>
+                        <td>1.154</td>
+                        <td>1.865</td>
+                        <td>1</td>
+                    </tr>  <tr>
+                        <td>52</td>
+                        <td>Black-Templars </td>
+                        <td>69</td>
+                        <td>900</td>
+                        <td>969</td>
+                        <td>1</td>
+                    </tr>  <tr>
+                        <td>53</td>
+                        <td>dikata </td>
+                        <td>60</td>
+                        <td>498</td>
+                        <td>558</td>
+                        <td>1</td>
+                    </tr>  <tr>
+                        <td>54</td>
+                        <td>Duckzilla </td>
+                        <td>55</td>
+                        <td>436</td>
+                        <td>491</td>
+                        <td>1</td>
+                    </tr>  <tr>
+                        <td>55</td>
+                        <td>Moppel </td>
+                        <td>108</td>
+                        <td>423</td>
+                        <td>531</td>
+                        <td>2</td>
+                    </tr>  <tr>
+                        <td>56</td>
+                        <td>Hansi </td>
+                        <td>30</td>
+                        <td>342</td>
+                        <td>372</td>
+                        <td>1</td>
+                    </tr>  <tr>
+                        <td>57</td>
+                        <td>Max2 </td>
+                        <td>3</td>
+                        <td>284</td>
+                        <td>287</td>
+                        <td>1</td>
+                    </tr>  <tr>
+                        <td>58</td>
+                        <td>Isildur </td>
+                        <td>786</td>
+                        <td>246</td>
+                        <td>1.032</td>
+                        <td>1</td>
+                    </tr>  <tr>
+                        <td>59</td>
+                        <td>verwirrt </td>
+                        <td>56</td>
+                        <td>185</td>
+                        <td>241</td>
+                        <td>1</td>
+                    </tr>  <tr>
+                        <td>60</td>
+                        <td>bomb </td>
+                        <td>0</td>
+                        <td>166</td>
+                        <td>166</td>
+                        <td>1</td>
+                    </tr>  <tr>
+                        <td>61</td>
+                        <td>MrBl3nd </td>
+                        <td>3</td>
+                        <td>150</td>
+                        <td>153</td>
+                        <td>1</td>
+                    </tr>  <tr>
+                        <td>62</td>
+                        <td>trolli </td>
+                        <td>1</td>
+                        <td>146</td>
+                        <td>147</td>
+                        <td>1</td>
+                    </tr>  <tr>
+                        <td>63</td>
+                        <td>Silent </td>
+                        <td>0</td>
+                        <td>127</td>
+                        <td>127</td>
+                        <td>1</td>
+                    </tr>  <tr>
+                        <td>64</td>
+                        <td>khaza </td>
+                        <td>0</td>
+                        <td>97</td>
+                        <td>97</td>
+                        <td>1</td>
+                    </tr>  <tr>
+                        <td>65</td>
+                        <td>girl </td>
+                        <td>1</td>
+                        <td>89</td>
+                        <td>90</td>
+                        <td>1</td>
+                    </tr>  <tr>
+                        <td>66</td>
+                        <td>HuHu </td>
+                        <td>0</td>
+                        <td>82</td>
+                        <td>82</td>
+                        <td>1</td>
+                    </tr>  <tr>
+                        <td>67</td>
+                        <td>banger </td>
+                        <td>1</td>
+                        <td>73</td>
+                        <td>74</td>
+                        <td>1</td>
+                    </tr>  <tr>
+                        <td>68</td>
+                        <td>extinction </td>
+                        <td>0</td>
+                        <td>67</td>
+                        <td>67</td>
+                        <td>1</td>
+                    </tr>  <tr>
+                        <td>69</td>
+                        <td>Freakman </td>
+                        <td>0</td>
+                        <td>67</td>
+                        <td>67</td>
+                        <td>1</td>
+                    </tr>  <tr>
+                        <td>70</td>
+                        <td>rookie </td>
+                        <td>0</td>
+                        <td>67</td>
+                        <td>67</td>
+                        <td>1</td>
+                    </tr>  <tr>
+                        <td>71</td>
+                        <td>blues </td>
+                        <td>0</td>
+                        <td>67</td>
+                        <td>67</td>
+                        <td>1</td>
+                    </tr>  <tr>
+                        <td>72</td>
+                        <td>OldMan </td>
+                        <td>0</td>
+                        <td>67</td>
+                        <td>67</td>
+                        <td>1</td>
+                    </tr>  <tr>
+                        <td>73</td>
+                        <td>leufra </td>
+                        <td>0</td>
+                        <td>67</td>
+                        <td>67</td>
+                        <td>1</td>
+                    </tr>  <tr>
+                        <td>74</td>
+                        <td>riot </td>
+                        <td>0</td>
+                        <td>67</td>
+                        <td>67</td>
+                        <td>1</td>
+                    </tr></table>    <table class="stats box" style="display: none;" id="allianceallpoints">
+                    <tr>
+                        <th colspan="7">Allianzen nach Gesamtpunkten</th>
+                    </tr>
+                    <tr>
+                        <td class="dark">#</td>
+                        <td class="dark">Name</td>
+                        <td class="dark">Punkte</td>
+                        <td class="dark">Mitglieder</td>
+                        <td class="dark">Punkte/Spieler Ø</td>
+                    </tr>  <tr>
+                        <td>1</td>
+                        <td>DieHorde <i>[DieHorde]</i></td>
+                        <td>442.637</td>
+                        <td>6</td><td>73.773</td>
+                    </tr>  <tr>
+                        <td>2</td>
+                        <td>Wildcards <i>[Wild-C]</i></td>
+                        <td>396.256</td>
+                        <td>6</td><td>66.043</td>
+                    </tr>  <tr>
+                        <td>3</td>
+                        <td>Hells Guardian <i>[Hell]</i></td>
+                        <td>123.743</td>
+                        <td>2</td><td>61.872</td>
+                    </tr>  <tr>
+                        <td>4</td>
+                        <td>OnePiece <i>[OnePiece]</i></td>
+                        <td>95.608</td>
+                        <td>2</td><td>47.804</td>
+                    </tr>  <tr>
+                        <td>5</td>
+                        <td>Shadow Vampires <i>[-sv-]</i></td>
+                        <td>83.152</td>
+                        <td>1</td><td>83.152</td>
+                    </tr>  <tr>
+                        <td>6</td>
+                        <td>Die letzten Luden <i>[pimp]</i></td>
+                        <td>65.719</td>
+                        <td>1</td><td>65.719</td>
+                    </tr>  <tr>
+                        <td>7</td>
+                        <td>Popplers  <i>[Popplers]</i></td>
+                        <td>33.627</td>
+                        <td>1</td><td>33.627</td>
+                    </tr>  <tr>
+                        <td>8</td>
+                        <td>Powerpuff Girls <i>[PUFF]</i></td>
+                        <td>31.913</td>
+                        <td>2</td><td>15.957</td>
+                    </tr>  <tr>
+                        <td>9</td>
+                        <td>werfarmtgewinnt <i>[WFG]</i></td>
+                        <td>28.929</td>
+                        <td>1</td><td>28.929</td>
+                    </tr>  <tr>
+                        <td>10</td>
+                        <td>kik-discounter <i>[kik]</i></td>
+                        <td>28.443</td>
+                        <td>1</td><td>28.443</td>
+                    </tr>  <tr>
+                        <td>11</td>
+                        <td>Vorbildliche Speicher <i>[Speicher]</i></td>
+                        <td>24.655</td>
+                        <td>1</td><td>24.655</td>
+                    </tr>  <tr>
+                        <td>12</td>
+                        <td>darkness_walker <i>[D-W]</i></td>
+                        <td>14.541</td>
+                        <td>1</td><td>14.541</td>
+                    </tr>  <tr>
+                        <td>13</td>
+                        <td>Zu stressig - inaktiv <i>[STRESS]</i></td>
+                        <td>9.955</td>
+                        <td>1</td><td>9.955</td>
+                    </tr>  <tr>
+                        <td>14</td>
+                        <td>Die Unbesiegbaren <i>[-DU-]</i></td>
+                        <td>7.780</td>
+                        <td>1</td><td>7.780</td>
+                    </tr>  <tr>
+                        <td>15</td>
+                        <td>-HELL-FAN- <i>[-Hell-F-]</i></td>
+                        <td>7.232</td>
+                        <td>1</td><td>7.232</td>
+                    </tr>  <tr>
+                        <td>16</td>
+                        <td>Sudden Strike United Space Tribes <i>[SuSt]</i></td>
+                        <td>6.206</td>
+                        <td>2</td><td>3.103</td>
+                    </tr>  <tr>
+                        <td>17</td>
+                        <td>KNALLHART <i>[HART]</i></td>
+                        <td>4.630</td>
+                        <td>1</td><td>4.630</td>
+                    </tr>  <tr>
+                        <td>18</td>
+                        <td>Die Horde <i>[DH]</i></td>
+                        <td>4.174</td>
+                        <td>1</td><td>4.174</td>
+                    </tr></table>    <table class="stats box" style="display: none;" id="allianceaverage">
+                    <tr>
+                        <th colspan="7">Allianzen nach Durchschnitt</th>
+                    </tr>
+                    <tr>
+                        <td class="dark">#</td>
+                        <td class="dark">Name</td>
+                        <td class="dark">Punkte</td>
+                        <td class="dark">Mitglieder</td>
+                        <td class="dark">Punkte/Spieler Ø</td>
+                    </tr>  <tr>
+                        <td>1</td>
+                        <td>Shadow Vampires <i>[-sv-]</i></td>
+                        <td>83.152</td>
+                        <td>1</td><td>83.152</td>
+                    </tr>  <tr>
+                        <td>2</td>
+                        <td>DieHorde <i>[DieHorde]</i></td>
+                        <td>442.637</td>
+                        <td>6</td><td>73.773</td>
+                    </tr>  <tr>
+                        <td>3</td>
+                        <td>Wildcards <i>[Wild-C]</i></td>
+                        <td>396.256</td>
+                        <td>6</td><td>66.043</td>
+                    </tr>  <tr>
+                        <td>4</td>
+                        <td>Die letzten Luden <i>[pimp]</i></td>
+                        <td>65.719</td>
+                        <td>1</td><td>65.719</td>
+                    </tr>  <tr>
+                        <td>5</td>
+                        <td>Hells Guardian <i>[Hell]</i></td>
+                        <td>123.743</td>
+                        <td>2</td><td>61.872</td>
+                    </tr>  <tr>
+                        <td>6</td>
+                        <td>OnePiece <i>[OnePiece]</i></td>
+                        <td>95.608</td>
+                        <td>2</td><td>47.804</td>
+                    </tr>  <tr>
+                        <td>7</td>
+                        <td>Popplers  <i>[Popplers]</i></td>
+                        <td>33.627</td>
+                        <td>1</td><td>33.627</td>
+                    </tr>  <tr>
+                        <td>8</td>
+                        <td>werfarmtgewinnt <i>[WFG]</i></td>
+                        <td>28.929</td>
+                        <td>1</td><td>28.929</td>
+                    </tr>  <tr>
+                        <td>9</td>
+                        <td>kik-discounter <i>[kik]</i></td>
+                        <td>28.443</td>
+                        <td>1</td><td>28.443</td>
+                    </tr>  <tr>
+                        <td>10</td>
+                        <td>Vorbildliche Speicher <i>[Speicher]</i></td>
+                        <td>24.655</td>
+                        <td>1</td><td>24.655</td>
+                    </tr>  <tr>
+                        <td>11</td>
+                        <td>Powerpuff Girls <i>[PUFF]</i></td>
+                        <td>31.913</td>
+                        <td>2</td><td>15.957</td>
+                    </tr>  <tr>
+                        <td>12</td>
+                        <td>darkness_walker <i>[D-W]</i></td>
+                        <td>14.541</td>
+                        <td>1</td><td>14.541</td>
+                    </tr>  <tr>
+                        <td>13</td>
+                        <td>Zu stressig - inaktiv <i>[STRESS]</i></td>
+                        <td>9.955</td>
+                        <td>1</td><td>9.955</td>
+                    </tr>  <tr>
+                        <td>14</td>
+                        <td>Die Unbesiegbaren <i>[-DU-]</i></td>
+                        <td>7.780</td>
+                        <td>1</td><td>7.780</td>
+                    </tr>  <tr>
+                        <td>15</td>
+                        <td>-HELL-FAN- <i>[-Hell-F-]</i></td>
+                        <td>7.232</td>
+                        <td>1</td><td>7.232</td>
+                    </tr>  <tr>
+                        <td>16</td>
+                        <td>KNALLHART <i>[HART]</i></td>
+                        <td>4.630</td>
+                        <td>1</td><td>4.630</td>
+                    </tr>  <tr>
+                        <td>17</td>
+                        <td>Die Horde <i>[DH]</i></td>
+                        <td>4.174</td>
+                        <td>1</td><td>4.174</td>
+                    </tr>  <tr>
+                        <td>18</td>
+                        <td>Sudden Strike United Space Tribes <i>[SuSt]</i></td>
+                        <td>6.206</td>
+                        <td>2</td><td>3.103</td>
+                    </tr></table>    </div>
+</div>
+</body>
+</html>

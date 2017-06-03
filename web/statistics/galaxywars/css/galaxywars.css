@@ -1,0 +1,298 @@
+
+
+body {
+    background-color: #000000;
+    margin: 0;
+    padding: 7px 0 7px;
+    font-size: 13px;
+    font-family: 'Trebuchet MS',Arial,sans-serif;
+    color: #ABABAB;
+}
+
+a {
+    text-decoration: none;
+}
+a img {
+    border: none;
+}
+
+#main {
+    clear: both;
+    display: block;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    vertical-align: top;
+    width: 920px;
+}
+
+#footer  {
+    display: block;
+    float: left;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#footer a {
+    color: #ffffff;
+}
+
+#logo, #nav {
+    height: 130px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+#logo {
+    background: url("../images/logo-bg.jpg") repeat-x left;
+    border-bottom: #6D7177 solid 1px;
+}
+
+#nav {
+    height: 30px;
+    background: url("../images/backgroundNav.png") repeat-x left;
+    border-style: solid;
+    border-color: #333744;
+    border-width: 1px 0 1px 0;
+    text-align: center;
+}
+
+#nav div {
+    display: table;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#nav ul  {
+    list-style: none outside none;
+    display: table-row;
+    margin: 0;
+    padding: 0;
+}
+
+#nav li {
+    display: table-cell;
+    padding: 0 6px;
+    border: 0 solid #333744;
+    border-left-width: 1px;
+    font-size: 16px;
+    line-height: 30px;
+    text-shadow: 1px 1px 1px #000000;
+}
+
+#nav ul li:last-child {
+    border-right-width: 1px !important;
+}
+
+#nav a {
+    color: #ABABAB;
+}
+
+#nav .active a {
+    color: #FFFFFF !important;
+}
+
+.content {
+    display: block;
+    float: left;
+    background-color: #3C4252;
+    margin-bottom: 20px;
+    border-radius: 0 0 4px 4px;
+}
+
+.boxHead {
+    float: left;
+    height: 26px;
+    width: 904px;
+    background: url("../images/backgroundBoxHead.png") repeat-x scroll 0 0 transparent;
+    border-radius: 4px 4px 0 0;
+    box-shadow: 2px 2px 2px #000000;
+    color: #ffffff;
+    line-height: 24px;
+    margin: 5px 0 1px 5px;
+    padding: 1px 0 0 5px;
+    text-indent: 5px;
+    text-shadow: 2px 2px 2px #000000;
+
+}
+
+.box {
+    display: block;
+    float: left;
+    height: 100%;
+    width: 904px;
+    margin: 0 0 7px 5px;
+    padding: 3px 0 1px 5px;
+    position: relative;
+    background-color: #333745;
+    box-shadow: 2px 2px 2px #000000;
+    min-height: 400px;
+}
+
+#statsBox {
+    display: block;
+    float: left;
+    width: 100%;
+    height: 100%;
+    margin-top: 5px;
+}
+
+/* Stats */
+
+table {
+    background-color: #000000;
+    min-width: 512px;
+    color:#FFFFFF;
+    padding: 0px;
+    border-style: none;
+    border-width: 0;
+}
+
+th {
+    background-color: #052543;
+    padding: 2px;
+    text-align: center;
+}
+
+td {
+    background-color: #808080;
+    padding: 2px;
+    text-align: center;
+}
+
+
+td.left{
+    text-align:left;
+}
+
+td.right{
+    text-align:right;
+}
+
+td.abstand{
+    font-size:0.1em; padding:3px
+}
+
+td.grey{
+    font-weight:bold;
+    background-color:#333333;
+}
+
+td.red{
+    color:#FF8C00;
+    font-size:10pt;
+}
+
+td.green{
+    color:#00ff00;
+    font-size:10pt;
+}
+
+
+/* Selectboxen */
+
+.selectdummy {
+    cursor: pointer;
+    float: left;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 10px !important;
+    color: #fff !important;
+}
+
+.selectdummy span.title {
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 12px;
+    color: #666;
+    float: left;
+    margin-right: 3px;
+    min-width: 100px;
+    text-align: left;
+}
+
+.selectdummy select {
+    position: absolute;
+    top: -4000px;
+    opacity: 0;
+}
+
+.selectdummy span.text {
+    background: url("../images/selectbg.png") left center no-repeat TRANSPARENT !important;
+    float: left;
+    font-size: 10px !important;
+    line-height: 19px !important;
+    font-family: Verdana;
+    height: 21px !important;
+    padding: 0 5px;
+    min-width: 60px;
+    text-align: right;
+    border-right: none !important;
+    border-top: 1px solid #373737;
+    border-left: 1px solid #373737;
+    border-bottom: 1px solid #373737;
+    border-radius: 4px 0 0 4px;
+}
+
+.selectdummy span.active {
+    color: #999;
+    border-color: #8A98B0 !important;
+}
+
+.selectdummy span.arrow {
+    background: url("../images/dropdownarrow.png") right center no-repeat transparent !important;
+    height: 21px;
+    width: 25px !important;
+    float: left;
+    position: relative;
+    display: block;
+    left: 0;
+    border-left: none !important;
+    border-top: 1px solid #373737;
+    border-right: 1px solid #373737;
+    border-bottom: 1px solid #373737;
+    border-radius: 0 4px 4px 0;
+}
+
+.selectdummy + .selectdummy,
+.selectdummy + input {
+    margin-left: 4px;
+}
+
+.selectdummy ul {
+    padding: 0;
+    margin: 23px 0 0 0 !important;
+    list-style: none;
+    z-index: 9999;
+    position: absolute;
+    min-width: 80px;
+    text-align: right;
+    box-shadow: 1px 1px 2px #000;
+}
+
+.selectdummy ul li {
+    background: url("../images/80pcb.png") TRANSPARENT;
+    border-right: 1px solid #373737;
+    border-left: 1px solid #373737;
+    padding: 2px 5px 2px 5px;
+    overflow: hidden;
+    line-height: 14px;
+    text-indent: 4px;
+    color: #556666;
+}
+
+.selectdummy ul li:first-child {
+    border-radius: 3px 3px 0 0;
+    border-top: 1px solid #373737;
+}
+
+.selectdummy ul li:last-child {
+    border-radius: 0 0 3px 3px;
+    border-bottom: 1px solid #373737;
+}
+
+.selectdummy ul li:hover {
+    background: url("../images/60pcb.png") TRANSPARENT;
+    color: #fff;
+    border-color: #8A98B0;
+}

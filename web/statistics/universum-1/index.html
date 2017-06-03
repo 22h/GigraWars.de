@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Statistik - GigraWars | Dein Weltraum Browsergame</title>
+
+    <meta name="description"
+          content="GigraWars ist ein klassisches Weltraumstrategie Browsergame nach dem Konzept von Galaxywars. Du beginnst als Imperator eines Planeten.">
+    <meta name="keywords"
+          content="gigra, browsergame, galaxywars, onlinestrategie, strategie, ogame, gigrawars, lex, lev, imperium, onlinegame, MMORPG, nostalgic">
+    <meta name="author" content="Magnus Reiß" />
+    <meta name="publisher" content="Magnus Reiß" />
+    <meta name="copyright" content="Magnus Reiß" />
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/gwng.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css">
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-58692233-11']);
+        _gaq.push(['_gat._anonymizeIp']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<nav class="navbar navbar-inverse" id="top-nav">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">Gigra<span class="blue">Wars</span></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="index.html">Übersicht</a></li>
+                <li><a href="building.html">Gebäude</a></li>
+                <li><a href="research.html">Forschungen</a></li>
+                <li><a href="toplist.html">Toplisten</a></li>
+                <li><a href="units.html">Einheiten</a></li>
+                <li><a href="player.html">Spieler</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="http://board.gigrawars.de" target="_blank">Forum</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+    <header id="header-small">
+        <div class="container">
+            <div class="spacer25"></div>
+            <h1>Universum 1</h1>
+
+            <p class="description">Von 01.09.2012 bis 30.05.2015</p>
+
+            <div class="spacer25"></div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <h2>Übersicht</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        Anzahl Spieler
+                        <span class="badge">3.423</span>
+                    </li>
+                    <li class="list-group-item">
+                        Anzahl Allianzen
+                        <span class="badge">356</span>
+                    </li>
+                    <li class="list-group-item">
+                        Anzahl besiedelter Planeten
+                        <span class="badge">18.553</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        Geschwindigkeit
+                        <span class="badge">1</span>
+                    </li>
+                    <li class="list-group-item">
+                        Anzahl Galaxien
+                        <span class="badge">300</span>
+                    </li>
+                    <li class="list-group-item">
+                        Anzahl Systeme pro Galaxie
+                        <span class="badge">300</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                <h2>Die höchsten Gebäudestufen</h2>
+                <ul class="list-group">
+                                            <li class="list-group-item">
+                            Kommandozentrale                            <span
+                                class="badge">96</span>
+                        </li>
+                                                <li class="list-group-item">
+                            Forschungszentrum                            <span
+                                class="badge">80</span>
+                        </li>
+                                                <li class="list-group-item">
+                            Eisenmine                            <span
+                                class="badge">120</span>
+                        </li>
+                                                <li class="list-group-item">
+                            Siliziummine                            <span
+                                class="badge">150</span>
+                        </li>
+                                                <li class="list-group-item">
+                            Bohrturm                            <span
+                                class="badge">83</span>
+                        </li>
+                                                <li class="list-group-item">
+                            Chemiefabrik                            <span
+                                class="badge">61</span>
+                        </li>
+                                                <li class="list-group-item">
+                            Erweiterte Chemiefabrik                            <span
+                                class="badge">32</span>
+                        </li>
+                                                <li class="list-group-item">
+                            Eisenspeicher                            <span
+                                class="badge">45</span>
+                        </li>
+                                                <li class="list-group-item">
+                            Siliziumspeicher                            <span
+                                class="badge">42</span>
+                        </li>
+                                                <li class="list-group-item">
+                            Wassertanks                            <span
+                                class="badge">42</span>
+                        </li>
+                                                <li class="list-group-item">
+                            Wasserstoffspeicher                            <span
+                                class="badge">53</span>
+                        </li>
+                                                <li class="list-group-item">
+                            Schiffsfabrik                            <span
+                                class="badge">50</span>
+                        </li>
+                                                <li class="list-group-item">
+                            Orbitale Verteidigungsstation                            <span
+                                class="badge">48</span>
+                        </li>
+                                                <li class="list-group-item">
+                            Planetarer Schild                            <span
+                                class="badge">23</span>
+                        </li>
+                                                <li class="list-group-item">
+                            Fusionsreaktor                            <span
+                                class="badge">24</span>
+                        </li>
+                                        </ul>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                <h2>Die höchsten Forschungsstufen</h2>
+                <ul class="list-group">
+                                            <li class="list-group-item">
+                            Verbrennungsantrieb                            <span
+                                class="badge">93</span>
+                        </li>
+                                                <li class="list-group-item">
+                            Ionenantrieb                            <span
+                                class="badge">33</span>
+                        </li>
+                                                <li class="list-group-item">
+                            Raumkrümmungsantrieb                            <span
+                                class="badge">35</span>
+                        </li>
+                                                <li class="list-group-item">
+                            Raumfaltungsantrieb                            <span
+                                class="badge">25</span>
+                        </li>
+                                                <li class="list-group-item">
+                            Ionisation                            <span
+                                class="badge">48</span>
+                        </li>
+                                                <li class="list-group-item">
+                            Energiebündelung                            <span
+                                class="badge">40</span>
+                        </li>
+                                                <li class="list-group-item">
+                            Explosivgeschosse                            <span
+                                class="badge">65</span>
+                        </li>
+                                                <li class="list-group-item">
+                            Spionagetechnik                            <span
+                                class="badge">69</span>
+                        </li>
+                                                <li class="list-group-item">
+                            Erweiterte Schiffspanzerung                            <span
+                                class="badge">50</span>
+                        </li>
+                                                <li class="list-group-item">
+                            Erhöhte Ladekapazität                            <span
+                                class="badge">41</span>
+                        </li>
+                                                <li class="list-group-item">
+                            Recycling-Technik                            <span
+                                class="badge">43</span>
+                        </li>
+                                        </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <h2>Gesamtanzahl zerstörter Schiffe nach Typ</h2>
+                <table class="table table-responsive table-hover">
+                    <thead>
+                    <tr>
+                        <th>Schiff</th>
+                        <th>Anzahl</th>
+                        <th>CKK</th>
+                        <th>Eisen</th>
+                        <th>Silizium</th>
+                        <th>Wasser</th>
+                        <th>Wasserstoff</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                            <tr>
+                            <td>Schakal</td>
+                            <td>2.667.935</td>
+                            <td>49.330</td>
+                            <td>666.983.750</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>200.095.125</td>
+                        </tr>
+                                                <tr>
+                            <td>Recycler</td>
+                            <td>180.119</td>
+                            <td>8.158</td>
+                            <td>153.101.150</td>
+                            <td>153.101.150</td>
+                            <td>18.011.900</td>
+                            <td>0</td>
+                        </tr>
+                                                <tr>
+                            <td>Spionagesonde</td>
+                            <td>50.504.142</td>
+                            <td>13.182</td>
+                            <td>0</td>
+                            <td>7.575.621.300</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                                                <tr>
+                            <td>Renegade</td>
+                            <td>2.520.148</td>
+                            <td>131.799</td>
+                            <td>2.520.148.000</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                                                <tr>
+                            <td>Raider</td>
+                            <td>66.650</td>
+                            <td>3.697</td>
+                            <td>33.325.000</td>
+                            <td>33.325.000</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                                                <tr>
+                            <td>Tarnbomber</td>
+                            <td>163.956</td>
+                            <td>18.932</td>
+                            <td>0</td>
+                            <td>327.912.000</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                                                <tr>
+                            <td>Kolonisationsschiff</td>
+                            <td>607.891</td>
+                            <td>5.027</td>
+                            <td>6.078.910.000</td>
+                            <td>9.118.365.000</td>
+                            <td>607.891.000</td>
+                            <td>9.118.365.000</td>
+                        </tr>
+                                                <tr>
+                            <td>Jäger</td>
+                            <td>225.377</td>
+                            <td>79.067</td>
+                            <td>450.754.000</td>
+                            <td>450.754.000</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                                                <tr>
+                            <td>Cougar</td>
+                            <td>540.167</td>
+                            <td>540.167</td>
+                            <td>2.160.668.000</td>
+                            <td>2.700.835.000</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                                                <tr>
+                            <td>Longeagle V</td>
+                            <td>2.617.375</td>
+                            <td>15.681.864</td>
+                            <td>130.868.750.000</td>
+                            <td>13.086.875.000</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                                                <tr>
+                            <td>Kleines Handelsschiff</td>
+                            <td>33.318</td>
+                            <td>195</td>
+                            <td>66.636.000</td>
+                            <td>66.636.000</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                                                <tr>
+                            <td>Großes Handelsschiff</td>
+                            <td>459.833</td>
+                            <td>51.014</td>
+                            <td>3.678.664.000</td>
+                            <td>919.666.000</td>
+                            <td>0</td>
+                            <td>2.299.165.000</td>
+                        </tr>
+                                                <tr>
+                            <td>Ikarus</td>
+                            <td>186.750</td>
+                            <td>239.231</td>
+                            <td>0</td>
+                            <td>9.337.500.000</td>
+                            <td>373.500.000</td>
+                            <td>0</td>
+                        </tr>
+                                                <tr>
+                            <td>Longeagle X</td>
+                            <td>790.803</td>
+                            <td>14.024.884</td>
+                            <td>0</td>
+                            <td>197.700.750.000</td>
+                            <td>19.770.075.000</td>
+                            <td>0</td>
+                        </tr>
+                                            </tbody>
+                    <thead>
+                    <tr>
+                        <td colspan="2">Insgesamt</td>
+                        <td>30.846.546</td>
+                        <td>146.677.939.900</td>
+                        <td>241.471.340.450</td>
+                        <td>20.769.477.900</td>
+                        <td>11.617.625.125</td>
+                    </tr>
+                    </thead>
+                </table>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <h2>Insgesamt zerstörten Verteidigungsanlagen</h2>
+                <table class="table table-responsive table-hover">
+                    <thead>
+                    <tr>
+                        <th class="dark">Türme</th>
+                        <th class="dark">Anzahl</th>
+                        <th class="dark">CKK</th>
+                        <th class="dark">Eisen</th>
+                        <th class="dark">Silizium</th>
+                        <th class="dark">Wasser</th>
+                        <th class="dark">Wasserstoff</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                            <tr>
+                            <td>Leichter Laserturm</td>
+                            <td>158.365</td>
+                            <td>9.488</td>
+                            <td>95.019.000</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                                                <tr>
+                            <td>Laserturm</td>
+                            <td>23.364</td>
+                            <td>5.112</td>
+                            <td>46.728.000</td>
+                            <td>4.672.800</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                                                <tr>
+                            <td>EMP-Werfer</td>
+                            <td>32.003</td>
+                            <td>11.227</td>
+                            <td>6.400.600</td>
+                            <td>160.015.000</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                                                <tr>
+                            <td>Plasmaturm</td>
+                            <td>49.544</td>
+                            <td>12.825</td>
+                            <td>99.088.000</td>
+                            <td>99.088.000</td>
+                            <td>2.477.200</td>
+                            <td>0</td>
+                        </tr>
+                                                <tr>
+                            <td>Raketenwerfer</td>
+                            <td>16.169</td>
+                            <td>25.526</td>
+                            <td>242.535.000</td>
+                            <td>32.338.000</td>
+                            <td>32.338.000</td>
+                            <td>0</td>
+                        </tr>
+                                            </tbody>
+                    <thead>
+                    <tr>
+                        <td class="dark" colspan="2">Insgesamt</td>
+                        <td class="dark">64.178</td>
+                        <td class="dark">489.770.600</td>
+                        <td class="dark">296.113.800</td>
+                        <td class="dark">34.815.200</td>
+                        <td class="dark">0</td>
+                    </tr>
+                    </thead>
+                </table>
+
+            </div>
+        </div>
+    </div>
+<div class="container-fluid" id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <a href="http://www.gigrawars.de/" target="_blank">Zur Hauptseite</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

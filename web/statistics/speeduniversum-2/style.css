@@ -1,0 +1,141 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Open Sans',"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    color: #FFFFFF;
+    background-color: #3C4252;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+header {
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    background: #171717;
+    color: #FFFFFF;
+}
+#logo {
+    float: left;
+    font-size: 18px;
+}
+header ul {
+    float: right;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+header ul li {
+    float: left;
+
+}
+header ul li.active a, header ul li:hover a {
+    background-color: #202020;
+    color: #1C91C0;
+}
+header ul li a {
+    display: block;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 0px 20px;
+}
+#subnav {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    background: #202020;
+}
+#subnav ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+#subnav ul li {
+    float: left;
+}
+#subnav ul li.active a, #subnav ul li:hover a {
+    background-color: #202020;
+    color: #1C91C0;
+}
+#subnav ul li a {
+    display: block;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 0px 20px;
+}
+#subnav ul li:nth-child(1) a {
+    padding: 0px 20px 0px 0px;
+}
+.center {
+    width: 990px;
+    margin: 0px auto;
+}
+#top {
+    width: 100%;
+    height: 600px;
+    background: url(header.jpg) center;
+    background-size: cover;
+    color: #FFFFFF;
+    padding-top: 450px;
+}
+#top .title {
+    font-size: 60px;
+    font-weight: 300;
+    text-align: center;
+    text-shadow: 2px 2px 1px #000;
+}
+#top .description {
+    font-size: 30px;
+    font-weight: 300;
+    text-align: center;
+    text-shadow: 2px 2px 1px #000;
+}
+#content {
+    width: 100%;
+}
+h1 {
+    font-size: 48px;
+    font-weight: 300;
+}
+h2 {
+    font-size: 24px;
+    font-weight: 300;
+}
+
+table.stats {
+    border-collapse:separate;
+    border-spacing:1px;
+    background-color: #000000;
+    width: 100%;
+    color:#FFFFFF;
+    padding: 0px;
+    border-style: none;
+    border-width: 0;
+    margin: 20px 0px;
+}
+
+table.stats th {
+    background-color: #162C36;
+    padding: 2px 5px;
+}
+
+table.stats td {
+    background-color: #808080;
+    padding: 2px 5px;
+}
+table.stats .dark {
+    background-color: #333333 !important;
+}
+
+
+
+table.stats tr:nth-child(even) td {
+    background-color: #909090;
+}
+
+table.stats tr:hover td {
+    background-color: #707070;
+}

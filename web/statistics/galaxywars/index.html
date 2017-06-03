@@ -1,0 +1,106 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>Galaxywars.de - Hall of Fame</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" href="css/galaxywars.css" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <script type="text/javascript" src="js/jquery-1.4.4.min.js"></script>
+    <script type="text/javascript" src="js/select.js"></script>
+    <script type="text/javascript">
+        $('document').ready(function(){
+            $('select').jqselectbox();
+            updateServerSelect();
+        });
+
+        function updateServerSelect() {
+            var date = $('#date').attr('value');
+
+            $('#serverSelect').load('stats/'+date+'/serverSelect.html', function() {
+               $('#server').jqselectbox();
+               updateCategorySelect();
+            });
+        }
+
+        function updateCategorySelect() {
+            var date = $('#date').attr('value');
+            var server = $('#server').attr('value');
+
+            $('#categorySelect').load('stats/'+date+'/'+server+'/categorySelect.html', function() {
+                $('#category').jqselectbox();
+                updateStatsSelect();
+            });
+        }
+
+        function updateStatsSelect() {
+            var date = $('#date').attr('value');
+            var server = $('#server').attr('value');
+            var category = $('#category').attr('value');
+
+            $('#statsSelect').load('stats/'+date+'/'+server+'/'+category+'/statsSelect.html', function() {
+                $('#stats').jqselectbox();
+                updateStats();
+            });
+        }
+
+        function updateStats() {
+            var date = $('#date').attr('value');
+            var server = $('#server').attr('value');
+            var category = $('#category').attr('value');
+            var stats = $('#stats').attr('value');
+
+            $('#statsBox').load('stats/'+date+'/'+server+'/'+category+'/'+stats+'.html', function() {});
+        }
+
+    </script>
+</head>
+<body>
+<div id="main">
+    <div id="header">
+        <div id="logo">
+            <a href="index.html">
+                <img src="images/logo-placeholder.jpg" />
+            </a>
+        </div>
+        <div id="nav">
+            <div>
+                <ul>
+                    <li class="active"><a href="index.html">Statistiken</a></li>
+                    <li><a href="story/gw1.htm" target="_blank">Wie alles begann</a></li>
+                    <li><a href="rpg.html">Abschluss RPG</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="boxHead">
+            Statistiken
+        </div>
+        <div class="box">
+            <select name="date" id="date" onchange="updateServerSelect();">
+                <option value="12-03" selected="selected">M&auml;rz 2012</option>
+                <option value="11-12">Dezember 2011</option>
+                <option value="11-06">Juni 2011</option>
+                <option value="10-11">November 2010</option>
+                <option value="09-10">Oktober 2009</option>
+				<option value="09-06">Juni 2009</option>
+				<option value="08-05">Mai 2008</option>
+				<option value="05-11">November 2005</option>
+				<option value="05-00">Vor 2005</option>
+            </select>
+            <div id="serverSelect"></div>
+            <div id="categorySelect"></div>
+            <div id="statsSelect"></div>
+            <div id="statsBox" align="center">
+
+            </div>
+            <div style="height: 10px; float: left; clear: both;"></div>
+        </div>
+    </div>
+    <div id="footer">
+        
+    </div>
+</div>
+</body>
+</html>

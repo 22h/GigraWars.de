@@ -1,0 +1,2551 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gebäude - GigraWars Speed 2</title>
+    <meta charset="utf-8"/>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="http://code.jquery.com/jquery.js"></script>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("select#gwstats").change(function(){
+                $( "select#gwstats option:selected").each(function(){
+                    $(".box").hide();
+                    $("#"+$(this).attr("value")).show();
+                });
+            }).change();
+        });
+    </script>
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-58692233-11']);
+        _gaq.push(['_gat._anonymizeIp']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+</head>
+<body>
+<header>
+    <div class="center">
+        <div id="logo">GigraWars zweite Speedrunde</div>
+        <ul>
+            <li><a href="index.html">Übersicht</a></li>
+            <li class="active"><a href="building.html">Gebäude</a></li>
+            <li><a href="research.html">Forschungen</a></li>
+            <li><a href="toplisten.html">Toplisten</a></li>
+                    </ul>
+    </div>
+</header>
+<div id="subnav">
+    <div class="center">
+        Wähle ein Gebäude aus der Liste
+        <select id="gwstats">
+            <option value="b1">Kommandozentrale</option><option value="b2">Forschungszentrum</option><option value="b3">Eisenmine</option><option value="b4">Lutinumraffinerie</option><option value="b5">Bohrturm</option><option value="b6">Chemiefabrik</option><option value="b7">Erweiterte Chemiefabrik</option><option value="b8">Eisenspeicher</option><option value="b9">Lutinumspeicher</option><option value="b10">Wassertanks</option><option value="b11">Wasserstofftanks</option><option value="b12">Schiffsfabrik</option><option value="b13">Orbitale Verteidigungsstation</option><option value="b14">Planetarer Schild</option><option value="b15">Fusionsreaktor</option>        </select>
+    </div>
+</div>
+<div id="content">
+    <div class="center">
+        <h1>Gebäude</h1>
+          <table class="stats box" style="display: none;" id="b1">
+                        <colgroup>
+                            <col width="75%">
+                            <col width="25%">
+                        </colgroup>
+                        <tr>
+                            <th colspan="2">Kommandozentrale</th>
+                        </tr>  <tr>
+                            <td>
+                                Kommandozentrale 1
+                                <i>(Startausbau)</i>
+                            </td>
+                            <td>42</td></tr>  <tr>
+                            <td>
+                                Kommandozentrale 2
+                                
+                            </td>
+                            <td>4</td></tr>  <tr>
+                            <td>
+                                Kommandozentrale 3
+                                
+                            </td>
+                            <td>12</td></tr>  <tr>
+                            <td>
+                                Kommandozentrale 4
+                                
+                            </td>
+                            <td>10</td></tr>  <tr>
+                            <td>
+                                Kommandozentrale 5
+                                
+                            </td>
+                            <td>6</td></tr>  <tr>
+                            <td>
+                                Kommandozentrale 6
+                                
+                            </td>
+                            <td>92</td></tr>  <tr>
+                            <td>
+                                Kommandozentrale 7
+                                
+                            </td>
+                            <td>43</td></tr>  <tr>
+                            <td>
+                                Kommandozentrale 8
+                                
+                            </td>
+                            <td>66</td></tr>  <tr>
+                            <td>
+                                Kommandozentrale 9
+                                
+                            </td>
+                            <td>37</td></tr>  <tr>
+                            <td>
+                                Kommandozentrale 10
+                                
+                            </td>
+                            <td>165</td></tr>  <tr>
+                            <td>
+                                Kommandozentrale 11
+                                
+                            </td>
+                            <td>55</td></tr>  <tr>
+                            <td>
+                                Kommandozentrale 12
+                                
+                            </td>
+                            <td>82</td></tr>  <tr>
+                            <td>
+                                Kommandozentrale 13
+                                
+                            </td>
+                            <td>100</td></tr>  <tr>
+                            <td>
+                                Kommandozentrale 14
+                                
+                            </td>
+                            <td>85</td></tr>  <tr>
+                            <td>
+                                Kommandozentrale 15
+                                
+                            </td>
+                            <td>180</td></tr>  <tr>
+                            <td>
+                                Kommandozentrale 16
+                                
+                            </td>
+                            <td>99</td></tr>  <tr>
+                            <td>
+                                Kommandozentrale 17
+                                
+                            </td>
+                            <td>117</td></tr>  <tr>
+                            <td>
+                                Kommandozentrale 18
+                                
+                            </td>
+                            <td>149</td></tr>  <tr>
+                            <td>
+                                Kommandozentrale 19
+                                
+                            </td>
+                            <td>34</td></tr>  <tr>
+                            <td>
+                                Kommandozentrale 20
+                                
+                            </td>
+                            <td>190</td></tr>  <tr>
+                            <td>
+                                Kommandozentrale 21
+                                
+                            </td>
+                            <td>55</td></tr>  <tr>
+                            <td>
+                                Kommandozentrale 22
+                                
+                            </td>
+                            <td>52</td></tr>  <tr>
+                            <td>
+                                Kommandozentrale 23
+                                
+                            </td>
+                            <td>59</td></tr>  <tr>
+                            <td>
+                                Kommandozentrale 24
+                                
+                            </td>
+                            <td>36</td></tr>  <tr>
+                            <td>
+                                Kommandozentrale 25
+                                
+                            </td>
+                            <td>114</td></tr>  <tr>
+                            <td>
+                                Kommandozentrale 26
+                                
+                            </td>
+                            <td>17</td></tr>  <tr>
+                            <td>
+                                Kommandozentrale 27
+                                
+                            </td>
+                            <td>28</td></tr>  <tr>
+                            <td>
+                                Kommandozentrale 28
+                                
+                            </td>
+                            <td>19</td></tr>  <tr>
+                            <td>
+                                Kommandozentrale 29
+                                
+                            </td>
+                            <td>9</td></tr>  <tr>
+                            <td>
+                                Kommandozentrale 30
+                                
+                            </td>
+                            <td>52</td></tr>  <tr>
+                            <td>
+                                Kommandozentrale 31
+                                
+                            </td>
+                            <td>20</td></tr>  <tr>
+                            <td>
+                                Kommandozentrale 32
+                                
+                            </td>
+                            <td>21</td></tr>  <tr>
+                            <td>
+                                Kommandozentrale 33
+                                
+                            </td>
+                            <td>20</td></tr>  <tr>
+                            <td>
+                                Kommandozentrale 34
+                                
+                            </td>
+                            <td>5</td></tr>  <tr>
+                            <td>
+                                Kommandozentrale 35
+                                
+                            </td>
+                            <td>14</td></tr>  <tr>
+                            <td>
+                                Kommandozentrale 36
+                                
+                            </td>
+                            <td>2</td></tr>  <tr>
+                            <td>
+                                Kommandozentrale 37
+                                
+                            </td>
+                            <td>3</td></tr>  <tr>
+                            <td>
+                                Kommandozentrale 60
+                                
+                            </td>
+                            <td>1</td></tr></table>  <table class="stats box" style="display: none;" id="b2">
+                        <colgroup>
+                            <col width="75%">
+                            <col width="25%">
+                        </colgroup>
+                        <tr>
+                            <th colspan="2">Forschungszentrum</th>
+                        </tr>  <tr>
+                            <td>
+                                Forschungszentrum 0
+                                
+                            </td>
+                            <td>1.303</td></tr>  <tr>
+                            <td>
+                                Forschungszentrum 1
+                                
+                            </td>
+                            <td>233</td></tr>  <tr>
+                            <td>
+                                Forschungszentrum 2
+                                
+                            </td>
+                            <td>61</td></tr>  <tr>
+                            <td>
+                                Forschungszentrum 3
+                                
+                            </td>
+                            <td>21</td></tr>  <tr>
+                            <td>
+                                Forschungszentrum 4
+                                
+                            </td>
+                            <td>38</td></tr>  <tr>
+                            <td>
+                                Forschungszentrum 5
+                                
+                            </td>
+                            <td>79</td></tr>  <tr>
+                            <td>
+                                Forschungszentrum 6
+                                
+                            </td>
+                            <td>13</td></tr>  <tr>
+                            <td>
+                                Forschungszentrum 7
+                                
+                            </td>
+                            <td>13</td></tr>  <tr>
+                            <td>
+                                Forschungszentrum 8
+                                
+                            </td>
+                            <td>40</td></tr>  <tr>
+                            <td>
+                                Forschungszentrum 9
+                                
+                            </td>
+                            <td>10</td></tr>  <tr>
+                            <td>
+                                Forschungszentrum 10
+                                
+                            </td>
+                            <td>62</td></tr>  <tr>
+                            <td>
+                                Forschungszentrum 11
+                                
+                            </td>
+                            <td>11</td></tr>  <tr>
+                            <td>
+                                Forschungszentrum 12
+                                
+                            </td>
+                            <td>29</td></tr>  <tr>
+                            <td>
+                                Forschungszentrum 13
+                                
+                            </td>
+                            <td>18</td></tr>  <tr>
+                            <td>
+                                Forschungszentrum 14
+                                
+                            </td>
+                            <td>15</td></tr>  <tr>
+                            <td>
+                                Forschungszentrum 15
+                                
+                            </td>
+                            <td>30</td></tr>  <tr>
+                            <td>
+                                Forschungszentrum 16
+                                
+                            </td>
+                            <td>11</td></tr>  <tr>
+                            <td>
+                                Forschungszentrum 17
+                                
+                            </td>
+                            <td>28</td></tr>  <tr>
+                            <td>
+                                Forschungszentrum 18
+                                
+                            </td>
+                            <td>8</td></tr>  <tr>
+                            <td>
+                                Forschungszentrum 19
+                                
+                            </td>
+                            <td>6</td></tr>  <tr>
+                            <td>
+                                Forschungszentrum 20
+                                
+                            </td>
+                            <td>36</td></tr>  <tr>
+                            <td>
+                                Forschungszentrum 21
+                                
+                            </td>
+                            <td>3</td></tr>  <tr>
+                            <td>
+                                Forschungszentrum 22
+                                
+                            </td>
+                            <td>3</td></tr>  <tr>
+                            <td>
+                                Forschungszentrum 23
+                                
+                            </td>
+                            <td>2</td></tr>  <tr>
+                            <td>
+                                Forschungszentrum 24
+                                
+                            </td>
+                            <td>2</td></tr>  <tr>
+                            <td>
+                                Forschungszentrum 25
+                                
+                            </td>
+                            <td>3</td></tr>  <tr>
+                            <td>
+                                Forschungszentrum 27
+                                
+                            </td>
+                            <td>2</td></tr>  <tr>
+                            <td>
+                                Forschungszentrum 28
+                                
+                            </td>
+                            <td>2</td></tr>  <tr>
+                            <td>
+                                Forschungszentrum 30
+                                
+                            </td>
+                            <td>5</td></tr>  <tr>
+                            <td>
+                                Forschungszentrum 31
+                                
+                            </td>
+                            <td>2</td></tr>  <tr>
+                            <td>
+                                Forschungszentrum 33
+                                
+                            </td>
+                            <td>1</td></tr>  <tr>
+                            <td>
+                                Forschungszentrum 34
+                                
+                            </td>
+                            <td>2</td></tr>  <tr>
+                            <td>
+                                Forschungszentrum 38
+                                
+                            </td>
+                            <td>1</td></tr>  <tr>
+                            <td>
+                                Forschungszentrum 40
+                                
+                            </td>
+                            <td>1</td></tr>  <tr>
+                            <td>
+                                Forschungszentrum 41
+                                
+                            </td>
+                            <td>1</td></tr></table>  <table class="stats box" style="display: none;" id="b3">
+                        <colgroup>
+                            <col width="75%">
+                            <col width="25%">
+                        </colgroup>
+                        <tr>
+                            <th colspan="2">Eisenmine</th>
+                        </tr>  <tr>
+                            <td>
+                                Eisenmine 0
+                                
+                            </td>
+                            <td>30</td></tr>  <tr>
+                            <td>
+                                Eisenmine 1
+                                
+                            </td>
+                            <td>6</td></tr>  <tr>
+                            <td>
+                                Eisenmine 2
+                                
+                            </td>
+                            <td>8</td></tr>  <tr>
+                            <td>
+                                Eisenmine 3
+                                
+                            </td>
+                            <td>3</td></tr>  <tr>
+                            <td>
+                                Eisenmine 4
+                                
+                            </td>
+                            <td>3</td></tr>  <tr>
+                            <td>
+                                Eisenmine 5
+                                
+                            </td>
+                            <td>21</td></tr>  <tr>
+                            <td>
+                                Eisenmine 6
+                                
+                            </td>
+                            <td>6</td></tr>  <tr>
+                            <td>
+                                Eisenmine 7
+                                
+                            </td>
+                            <td>6</td></tr>  <tr>
+                            <td>
+                                Eisenmine 8
+                                
+                            </td>
+                            <td>5</td></tr>  <tr>
+                            <td>
+                                Eisenmine 9
+                                
+                            </td>
+                            <td>14</td></tr>  <tr>
+                            <td>
+                                Eisenmine 10
+                                
+                            </td>
+                            <td>17</td></tr>  <tr>
+                            <td>
+                                Eisenmine 11
+                                
+                            </td>
+                            <td>15</td></tr>  <tr>
+                            <td>
+                                Eisenmine 12
+                                
+                            </td>
+                            <td>19</td></tr>  <tr>
+                            <td>
+                                Eisenmine 13
+                                
+                            </td>
+                            <td>23</td></tr>  <tr>
+                            <td>
+                                Eisenmine 14
+                                
+                            </td>
+                            <td>23</td></tr>  <tr>
+                            <td>
+                                Eisenmine 15
+                                
+                            </td>
+                            <td>28</td></tr>  <tr>
+                            <td>
+                                Eisenmine 16
+                                
+                            </td>
+                            <td>21</td></tr>  <tr>
+                            <td>
+                                Eisenmine 17
+                                
+                            </td>
+                            <td>20</td></tr>  <tr>
+                            <td>
+                                Eisenmine 18
+                                
+                            </td>
+                            <td>23</td></tr>  <tr>
+                            <td>
+                                Eisenmine 19
+                                
+                            </td>
+                            <td>18</td></tr>  <tr>
+                            <td>
+                                Eisenmine 20
+                                
+                            </td>
+                            <td>39</td></tr>  <tr>
+                            <td>
+                                Eisenmine 21
+                                
+                            </td>
+                            <td>48</td></tr>  <tr>
+                            <td>
+                                Eisenmine 22
+                                
+                            </td>
+                            <td>41</td></tr>  <tr>
+                            <td>
+                                Eisenmine 23
+                                
+                            </td>
+                            <td>26</td></tr>  <tr>
+                            <td>
+                                Eisenmine 24
+                                
+                            </td>
+                            <td>40</td></tr>  <tr>
+                            <td>
+                                Eisenmine 25
+                                
+                            </td>
+                            <td>100</td></tr>  <tr>
+                            <td>
+                                Eisenmine 26
+                                
+                            </td>
+                            <td>23</td></tr>  <tr>
+                            <td>
+                                Eisenmine 27
+                                
+                            </td>
+                            <td>24</td></tr>  <tr>
+                            <td>
+                                Eisenmine 28
+                                
+                            </td>
+                            <td>50</td></tr>  <tr>
+                            <td>
+                                Eisenmine 29
+                                
+                            </td>
+                            <td>46</td></tr>  <tr>
+                            <td>
+                                Eisenmine 30
+                                
+                            </td>
+                            <td>83</td></tr>  <tr>
+                            <td>
+                                Eisenmine 31
+                                
+                            </td>
+                            <td>59</td></tr>  <tr>
+                            <td>
+                                Eisenmine 32
+                                
+                            </td>
+                            <td>37</td></tr>  <tr>
+                            <td>
+                                Eisenmine 33
+                                
+                            </td>
+                            <td>12</td></tr>  <tr>
+                            <td>
+                                Eisenmine 34
+                                
+                            </td>
+                            <td>50</td></tr>  <tr>
+                            <td>
+                                Eisenmine 35
+                                
+                            </td>
+                            <td>58</td></tr>  <tr>
+                            <td>
+                                Eisenmine 36
+                                
+                            </td>
+                            <td>95</td></tr>  <tr>
+                            <td>
+                                Eisenmine 37
+                                
+                            </td>
+                            <td>70</td></tr>  <tr>
+                            <td>
+                                Eisenmine 38
+                                
+                            </td>
+                            <td>114</td></tr>  <tr>
+                            <td>
+                                Eisenmine 39
+                                
+                            </td>
+                            <td>33</td></tr>  <tr>
+                            <td>
+                                Eisenmine 40
+                                
+                            </td>
+                            <td>85</td></tr>  <tr>
+                            <td>
+                                Eisenmine 41
+                                
+                            </td>
+                            <td>101</td></tr>  <tr>
+                            <td>
+                                Eisenmine 42
+                                
+                            </td>
+                            <td>89</td></tr>  <tr>
+                            <td>
+                                Eisenmine 43
+                                
+                            </td>
+                            <td>110</td></tr>  <tr>
+                            <td>
+                                Eisenmine 44
+                                
+                            </td>
+                            <td>61</td></tr>  <tr>
+                            <td>
+                                Eisenmine 45
+                                
+                            </td>
+                            <td>38</td></tr>  <tr>
+                            <td>
+                                Eisenmine 46
+                                
+                            </td>
+                            <td>33</td></tr>  <tr>
+                            <td>
+                                Eisenmine 47
+                                
+                            </td>
+                            <td>18</td></tr>  <tr>
+                            <td>
+                                Eisenmine 48
+                                
+                            </td>
+                            <td>9</td></tr>  <tr>
+                            <td>
+                                Eisenmine 49
+                                
+                            </td>
+                            <td>40</td></tr>  <tr>
+                            <td>
+                                Eisenmine 50
+                                
+                            </td>
+                            <td>37</td></tr>  <tr>
+                            <td>
+                                Eisenmine 51
+                                
+                            </td>
+                            <td>27</td></tr>  <tr>
+                            <td>
+                                Eisenmine 52
+                                
+                            </td>
+                            <td>27</td></tr>  <tr>
+                            <td>
+                                Eisenmine 53
+                                
+                            </td>
+                            <td>37</td></tr>  <tr>
+                            <td>
+                                Eisenmine 54
+                                
+                            </td>
+                            <td>8</td></tr>  <tr>
+                            <td>
+                                Eisenmine 55
+                                
+                            </td>
+                            <td>4</td></tr>  <tr>
+                            <td>
+                                Eisenmine 56
+                                
+                            </td>
+                            <td>1</td></tr>  <tr>
+                            <td>
+                                Eisenmine 57
+                                
+                            </td>
+                            <td>3</td></tr>  <tr>
+                            <td>
+                                Eisenmine 60
+                                
+                            </td>
+                            <td>3</td></tr>  <tr>
+                            <td>
+                                Eisenmine 62
+                                
+                            </td>
+                            <td>6</td></tr>  <tr>
+                            <td>
+                                Eisenmine 63
+                                
+                            </td>
+                            <td>1</td></tr></table>  <table class="stats box" style="display: none;" id="b4">
+                        <colgroup>
+                            <col width="75%">
+                            <col width="25%">
+                        </colgroup>
+                        <tr>
+                            <th colspan="2">Lutinumraffinerie</th>
+                        </tr>  <tr>
+                            <td>
+                                Lutinumraffinerie 0
+                                
+                            </td>
+                            <td>52</td></tr>  <tr>
+                            <td>
+                                Lutinumraffinerie 1
+                                
+                            </td>
+                            <td>4</td></tr>  <tr>
+                            <td>
+                                Lutinumraffinerie 2
+                                
+                            </td>
+                            <td>2</td></tr>  <tr>
+                            <td>
+                                Lutinumraffinerie 3
+                                
+                            </td>
+                            <td>4</td></tr>  <tr>
+                            <td>
+                                Lutinumraffinerie 4
+                                
+                            </td>
+                            <td>5</td></tr>  <tr>
+                            <td>
+                                Lutinumraffinerie 5
+                                
+                            </td>
+                            <td>30</td></tr>  <tr>
+                            <td>
+                                Lutinumraffinerie 6
+                                
+                            </td>
+                            <td>9</td></tr>  <tr>
+                            <td>
+                                Lutinumraffinerie 7
+                                
+                            </td>
+                            <td>10</td></tr>  <tr>
+                            <td>
+                                Lutinumraffinerie 8
+                                
+                            </td>
+                            <td>18</td></tr>  <tr>
+                            <td>
+                                Lutinumraffinerie 9
+                                
+                            </td>
+                            <td>15</td></tr>  <tr>
+                            <td>
+                                Lutinumraffinerie 10
+                                
+                            </td>
+                            <td>36</td></tr>  <tr>
+                            <td>
+                                Lutinumraffinerie 11
+                                
+                            </td>
+                            <td>19</td></tr>  <tr>
+                            <td>
+                                Lutinumraffinerie 12
+                                
+                            </td>
+                            <td>18</td></tr>  <tr>
+                            <td>
+                                Lutinumraffinerie 13
+                                
+                            </td>
+                            <td>18</td></tr>  <tr>
+                            <td>
+                                Lutinumraffinerie 14
+                                
+                            </td>
+                            <td>15</td></tr>  <tr>
+                            <td>
+                                Lutinumraffinerie 15
+                                
+                            </td>
+                            <td>37</td></tr>  <tr>
+                            <td>
+                                Lutinumraffinerie 16
+                                
+                            </td>
+                            <td>19</td></tr>  <tr>
+                            <td>
+                                Lutinumraffinerie 17
+                                
+                            </td>
+                            <td>26</td></tr>  <tr>
+                            <td>
+                                Lutinumraffinerie 18
+                                
+                            </td>
+                            <td>12</td></tr>  <tr>
+                            <td>
+                                Lutinumraffinerie 19
+                                
+                            </td>
+                            <td>14</td></tr>  <tr>
+                            <td>
+                                Lutinumraffinerie 20
+                                
+                            </td>
+                            <td>59</td></tr>  <tr>
+                            <td>
+                                Lutinumraffinerie 21
+                                
+                            </td>
+                            <td>29</td></tr>  <tr>
+                            <td>
+                                Lutinumraffinerie 22
+                                
+                            </td>
+                            <td>20</td></tr>  <tr>
+                            <td>
+                                Lutinumraffinerie 23
+                                
+                            </td>
+                            <td>23</td></tr>  <tr>
+                            <td>
+                                Lutinumraffinerie 24
+                                
+                            </td>
+                            <td>61</td></tr>  <tr>
+                            <td>
+                                Lutinumraffinerie 25
+                                
+                            </td>
+                            <td>58</td></tr>  <tr>
+                            <td>
+                                Lutinumraffinerie 26
+                                
+                            </td>
+                            <td>41</td></tr>  <tr>
+                            <td>
+                                Lutinumraffinerie 27
+                                
+                            </td>
+                            <td>44</td></tr>  <tr>
+                            <td>
+                                Lutinumraffinerie 28
+                                
+                            </td>
+                            <td>25</td></tr>  <tr>
+                            <td>
+                                Lutinumraffinerie 29
+                                
+                            </td>
+                            <td>34</td></tr>  <tr>
+                            <td>
+                                Lutinumraffinerie 30
+                                
+                            </td>
+                            <td>124</td></tr>  <tr>
+                            <td>
+                                Lutinumraffinerie 31
+                                
+                            </td>
+                            <td>50</td></tr>  <tr>
+                            <td>
+                                Lutinumraffinerie 32
+                                
+                            </td>
+                            <td>68</td></tr>  <tr>
+                            <td>
+                                Lutinumraffinerie 33
+                                
+                            </td>
+                            <td>29</td></tr>  <tr>
+                            <td>
+                                Lutinumraffinerie 34
+                                
+                            </td>
+                            <td>46</td></tr>  <tr>
+                            <td>
+                                Lutinumraffinerie 35
+                                
+                            </td>
+                            <td>39</td></tr>  <tr>
+                            <td>
+                                Lutinumraffinerie 36
+                                
+                            </td>
+                            <td>49</td></tr>  <tr>
+                            <td>
+                                Lutinumraffinerie 37
+                                
+                            </td>
+                            <td>61</td></tr>  <tr>
+                            <td>
+                                Lutinumraffinerie 38
+                                
+                            </td>
+                            <td>57</td></tr>  <tr>
+                            <td>
+                                Lutinumraffinerie 39
+                                
+                            </td>
+                            <td>32</td></tr>  <tr>
+                            <td>
+                                Lutinumraffinerie 40
+                                
+                            </td>
+                            <td>123</td></tr>  <tr>
+                            <td>
+                                Lutinumraffinerie 41
+                                
+                            </td>
+                            <td>56</td></tr>  <tr>
+                            <td>
+                                Lutinumraffinerie 42
+                                
+                            </td>
+                            <td>101</td></tr>  <tr>
+                            <td>
+                                Lutinumraffinerie 43
+                                
+                            </td>
+                            <td>64</td></tr>  <tr>
+                            <td>
+                                Lutinumraffinerie 44
+                                
+                            </td>
+                            <td>29</td></tr>  <tr>
+                            <td>
+                                Lutinumraffinerie 45
+                                
+                            </td>
+                            <td>58</td></tr>  <tr>
+                            <td>
+                                Lutinumraffinerie 46
+                                
+                            </td>
+                            <td>47</td></tr>  <tr>
+                            <td>
+                                Lutinumraffinerie 47
+                                
+                            </td>
+                            <td>21</td></tr>  <tr>
+                            <td>
+                                Lutinumraffinerie 48
+                                
+                            </td>
+                            <td>51</td></tr>  <tr>
+                            <td>
+                                Lutinumraffinerie 49
+                                
+                            </td>
+                            <td>27</td></tr>  <tr>
+                            <td>
+                                Lutinumraffinerie 50
+                                
+                            </td>
+                            <td>100</td></tr>  <tr>
+                            <td>
+                                Lutinumraffinerie 51
+                                
+                            </td>
+                            <td>21</td></tr>  <tr>
+                            <td>
+                                Lutinumraffinerie 52
+                                
+                            </td>
+                            <td>4</td></tr>  <tr>
+                            <td>
+                                Lutinumraffinerie 53
+                                
+                            </td>
+                            <td>34</td></tr>  <tr>
+                            <td>
+                                Lutinumraffinerie 54
+                                
+                            </td>
+                            <td>9</td></tr>  <tr>
+                            <td>
+                                Lutinumraffinerie 55
+                                
+                            </td>
+                            <td>23</td></tr>  <tr>
+                            <td>
+                                Lutinumraffinerie 56
+                                
+                            </td>
+                            <td>9</td></tr>  <tr>
+                            <td>
+                                Lutinumraffinerie 57
+                                
+                            </td>
+                            <td>4</td></tr>  <tr>
+                            <td>
+                                Lutinumraffinerie 58
+                                
+                            </td>
+                            <td>2</td></tr></table>  <table class="stats box" style="display: none;" id="b5">
+                        <colgroup>
+                            <col width="75%">
+                            <col width="25%">
+                        </colgroup>
+                        <tr>
+                            <th colspan="2">Bohrturm</th>
+                        </tr>  <tr>
+                            <td>
+                                Bohrturm 0
+                                
+                            </td>
+                            <td>130</td></tr>  <tr>
+                            <td>
+                                Bohrturm 1
+                                
+                            </td>
+                            <td>40</td></tr>  <tr>
+                            <td>
+                                Bohrturm 2
+                                
+                            </td>
+                            <td>12</td></tr>  <tr>
+                            <td>
+                                Bohrturm 3
+                                
+                            </td>
+                            <td>6</td></tr>  <tr>
+                            <td>
+                                Bohrturm 4
+                                
+                            </td>
+                            <td>7</td></tr>  <tr>
+                            <td>
+                                Bohrturm 5
+                                
+                            </td>
+                            <td>37</td></tr>  <tr>
+                            <td>
+                                Bohrturm 6
+                                
+                            </td>
+                            <td>5</td></tr>  <tr>
+                            <td>
+                                Bohrturm 7
+                                
+                            </td>
+                            <td>6</td></tr>  <tr>
+                            <td>
+                                Bohrturm 8
+                                
+                            </td>
+                            <td>5</td></tr>  <tr>
+                            <td>
+                                Bohrturm 9
+                                
+                            </td>
+                            <td>2</td></tr>  <tr>
+                            <td>
+                                Bohrturm 10
+                                
+                            </td>
+                            <td>281</td></tr>  <tr>
+                            <td>
+                                Bohrturm 11
+                                
+                            </td>
+                            <td>67</td></tr>  <tr>
+                            <td>
+                                Bohrturm 12
+                                
+                            </td>
+                            <td>73</td></tr>  <tr>
+                            <td>
+                                Bohrturm 13
+                                
+                            </td>
+                            <td>73</td></tr>  <tr>
+                            <td>
+                                Bohrturm 14
+                                
+                            </td>
+                            <td>100</td></tr>  <tr>
+                            <td>
+                                Bohrturm 15
+                                
+                            </td>
+                            <td>140</td></tr>  <tr>
+                            <td>
+                                Bohrturm 16
+                                
+                            </td>
+                            <td>106</td></tr>  <tr>
+                            <td>
+                                Bohrturm 17
+                                
+                            </td>
+                            <td>55</td></tr>  <tr>
+                            <td>
+                                Bohrturm 18
+                                
+                            </td>
+                            <td>81</td></tr>  <tr>
+                            <td>
+                                Bohrturm 19
+                                
+                            </td>
+                            <td>80</td></tr>  <tr>
+                            <td>
+                                Bohrturm 20
+                                
+                            </td>
+                            <td>117</td></tr>  <tr>
+                            <td>
+                                Bohrturm 21
+                                
+                            </td>
+                            <td>59</td></tr>  <tr>
+                            <td>
+                                Bohrturm 22
+                                
+                            </td>
+                            <td>29</td></tr>  <tr>
+                            <td>
+                                Bohrturm 23
+                                
+                            </td>
+                            <td>30</td></tr>  <tr>
+                            <td>
+                                Bohrturm 24
+                                
+                            </td>
+                            <td>43</td></tr>  <tr>
+                            <td>
+                                Bohrturm 25
+                                
+                            </td>
+                            <td>134</td></tr>  <tr>
+                            <td>
+                                Bohrturm 26
+                                
+                            </td>
+                            <td>35</td></tr>  <tr>
+                            <td>
+                                Bohrturm 27
+                                
+                            </td>
+                            <td>33</td></tr>  <tr>
+                            <td>
+                                Bohrturm 28
+                                
+                            </td>
+                            <td>2</td></tr>  <tr>
+                            <td>
+                                Bohrturm 29
+                                
+                            </td>
+                            <td>9</td></tr>  <tr>
+                            <td>
+                                Bohrturm 30
+                                
+                            </td>
+                            <td>69</td></tr>  <tr>
+                            <td>
+                                Bohrturm 31
+                                
+                            </td>
+                            <td>40</td></tr>  <tr>
+                            <td>
+                                Bohrturm 32
+                                
+                            </td>
+                            <td>9</td></tr>  <tr>
+                            <td>
+                                Bohrturm 33
+                                
+                            </td>
+                            <td>12</td></tr>  <tr>
+                            <td>
+                                Bohrturm 34
+                                
+                            </td>
+                            <td>9</td></tr>  <tr>
+                            <td>
+                                Bohrturm 35
+                                
+                            </td>
+                            <td>54</td></tr>  <tr>
+                            <td>
+                                Bohrturm 36
+                                
+                            </td>
+                            <td>34</td></tr>  <tr>
+                            <td>
+                                Bohrturm 37
+                                
+                            </td>
+                            <td>4</td></tr>  <tr>
+                            <td>
+                                Bohrturm 38
+                                
+                            </td>
+                            <td>2</td></tr>  <tr>
+                            <td>
+                                Bohrturm 40
+                                
+                            </td>
+                            <td>41</td></tr>  <tr>
+                            <td>
+                                Bohrturm 41
+                                
+                            </td>
+                            <td>1</td></tr>  <tr>
+                            <td>
+                                Bohrturm 43
+                                
+                            </td>
+                            <td>1</td></tr>  <tr>
+                            <td>
+                                Bohrturm 46
+                                
+                            </td>
+                            <td>15</td></tr>  <tr>
+                            <td>
+                                Bohrturm 47
+                                
+                            </td>
+                            <td>4</td></tr>  <tr>
+                            <td>
+                                Bohrturm 48
+                                
+                            </td>
+                            <td>1</td></tr>  <tr>
+                            <td>
+                                Bohrturm 49
+                                
+                            </td>
+                            <td>1</td></tr>  <tr>
+                            <td>
+                                Bohrturm 55
+                                
+                            </td>
+                            <td>1</td></tr></table>  <table class="stats box" style="display: none;" id="b6">
+                        <colgroup>
+                            <col width="75%">
+                            <col width="25%">
+                        </colgroup>
+                        <tr>
+                            <th colspan="2">Chemiefabrik</th>
+                        </tr>  <tr>
+                            <td>
+                                Chemiefabrik 0
+                                
+                            </td>
+                            <td>169</td></tr>  <tr>
+                            <td>
+                                Chemiefabrik 1
+                                
+                            </td>
+                            <td>44</td></tr>  <tr>
+                            <td>
+                                Chemiefabrik 2
+                                
+                            </td>
+                            <td>27</td></tr>  <tr>
+                            <td>
+                                Chemiefabrik 3
+                                
+                            </td>
+                            <td>25</td></tr>  <tr>
+                            <td>
+                                Chemiefabrik 4
+                                
+                            </td>
+                            <td>14</td></tr>  <tr>
+                            <td>
+                                Chemiefabrik 5
+                                
+                            </td>
+                            <td>835</td></tr>  <tr>
+                            <td>
+                                Chemiefabrik 6
+                                
+                            </td>
+                            <td>118</td></tr>  <tr>
+                            <td>
+                                Chemiefabrik 7
+                                
+                            </td>
+                            <td>39</td></tr>  <tr>
+                            <td>
+                                Chemiefabrik 8
+                                
+                            </td>
+                            <td>126</td></tr>  <tr>
+                            <td>
+                                Chemiefabrik 9
+                                
+                            </td>
+                            <td>75</td></tr>  <tr>
+                            <td>
+                                Chemiefabrik 10
+                                
+                            </td>
+                            <td>315</td></tr>  <tr>
+                            <td>
+                                Chemiefabrik 11
+                                
+                            </td>
+                            <td>20</td></tr>  <tr>
+                            <td>
+                                Chemiefabrik 12
+                                
+                            </td>
+                            <td>16</td></tr>  <tr>
+                            <td>
+                                Chemiefabrik 13
+                                
+                            </td>
+                            <td>36</td></tr>  <tr>
+                            <td>
+                                Chemiefabrik 14
+                                
+                            </td>
+                            <td>18</td></tr>  <tr>
+                            <td>
+                                Chemiefabrik 15
+                                
+                            </td>
+                            <td>48</td></tr>  <tr>
+                            <td>
+                                Chemiefabrik 16
+                                
+                            </td>
+                            <td>43</td></tr>  <tr>
+                            <td>
+                                Chemiefabrik 17
+                                
+                            </td>
+                            <td>45</td></tr>  <tr>
+                            <td>
+                                Chemiefabrik 18
+                                
+                            </td>
+                            <td>6</td></tr>  <tr>
+                            <td>
+                                Chemiefabrik 19
+                                
+                            </td>
+                            <td>8</td></tr>  <tr>
+                            <td>
+                                Chemiefabrik 20
+                                
+                            </td>
+                            <td>13</td></tr>  <tr>
+                            <td>
+                                Chemiefabrik 21
+                                
+                            </td>
+                            <td>8</td></tr>  <tr>
+                            <td>
+                                Chemiefabrik 22
+                                
+                            </td>
+                            <td>1</td></tr>  <tr>
+                            <td>
+                                Chemiefabrik 23
+                                
+                            </td>
+                            <td>21</td></tr>  <tr>
+                            <td>
+                                Chemiefabrik 25
+                                
+                            </td>
+                            <td>2</td></tr>  <tr>
+                            <td>
+                                Chemiefabrik 30
+                                
+                            </td>
+                            <td>20</td></tr>  <tr>
+                            <td>
+                                Chemiefabrik 33
+                                
+                            </td>
+                            <td>1</td></tr>  <tr>
+                            <td>
+                                Chemiefabrik 36
+                                
+                            </td>
+                            <td>2</td></tr></table>  <table class="stats box" style="display: none;" id="b7">
+                        <colgroup>
+                            <col width="75%">
+                            <col width="25%">
+                        </colgroup>
+                        <tr>
+                            <th colspan="2">Erweiterte Chemiefabrik</th>
+                        </tr>  <tr>
+                            <td>
+                                Erweiterte Chemiefabrik 0
+                                
+                            </td>
+                            <td>317</td></tr>  <tr>
+                            <td>
+                                Erweiterte Chemiefabrik 1
+                                
+                            </td>
+                            <td>40</td></tr>  <tr>
+                            <td>
+                                Erweiterte Chemiefabrik 2
+                                
+                            </td>
+                            <td>123</td></tr>  <tr>
+                            <td>
+                                Erweiterte Chemiefabrik 3
+                                
+                            </td>
+                            <td>186</td></tr>  <tr>
+                            <td>
+                                Erweiterte Chemiefabrik 4
+                                
+                            </td>
+                            <td>233</td></tr>  <tr>
+                            <td>
+                                Erweiterte Chemiefabrik 5
+                                
+                            </td>
+                            <td>217</td></tr>  <tr>
+                            <td>
+                                Erweiterte Chemiefabrik 6
+                                
+                            </td>
+                            <td>133</td></tr>  <tr>
+                            <td>
+                                Erweiterte Chemiefabrik 7
+                                
+                            </td>
+                            <td>144</td></tr>  <tr>
+                            <td>
+                                Erweiterte Chemiefabrik 8
+                                
+                            </td>
+                            <td>132</td></tr>  <tr>
+                            <td>
+                                Erweiterte Chemiefabrik 9
+                                
+                            </td>
+                            <td>109</td></tr>  <tr>
+                            <td>
+                                Erweiterte Chemiefabrik 10
+                                
+                            </td>
+                            <td>171</td></tr>  <tr>
+                            <td>
+                                Erweiterte Chemiefabrik 11
+                                
+                            </td>
+                            <td>54</td></tr>  <tr>
+                            <td>
+                                Erweiterte Chemiefabrik 12
+                                
+                            </td>
+                            <td>59</td></tr>  <tr>
+                            <td>
+                                Erweiterte Chemiefabrik 13
+                                
+                            </td>
+                            <td>62</td></tr>  <tr>
+                            <td>
+                                Erweiterte Chemiefabrik 14
+                                
+                            </td>
+                            <td>37</td></tr>  <tr>
+                            <td>
+                                Erweiterte Chemiefabrik 15
+                                
+                            </td>
+                            <td>31</td></tr>  <tr>
+                            <td>
+                                Erweiterte Chemiefabrik 16
+                                
+                            </td>
+                            <td>22</td></tr>  <tr>
+                            <td>
+                                Erweiterte Chemiefabrik 18
+                                
+                            </td>
+                            <td>1</td></tr>  <tr>
+                            <td>
+                                Erweiterte Chemiefabrik 21
+                                
+                            </td>
+                            <td>1</td></tr>  <tr>
+                            <td>
+                                Erweiterte Chemiefabrik 23
+                                
+                            </td>
+                            <td>19</td></tr>  <tr>
+                            <td>
+                                Erweiterte Chemiefabrik 25
+                                
+                            </td>
+                            <td>1</td></tr>  <tr>
+                            <td>
+                                Erweiterte Chemiefabrik 26
+                                
+                            </td>
+                            <td>2</td></tr>  <tr>
+                            <td>
+                                Erweiterte Chemiefabrik 30
+                                
+                            </td>
+                            <td>1</td></tr></table>  <table class="stats box" style="display: none;" id="b8">
+                        <colgroup>
+                            <col width="75%">
+                            <col width="25%">
+                        </colgroup>
+                        <tr>
+                            <th colspan="2">Eisenspeicher</th>
+                        </tr>  <tr>
+                            <td>
+                                Eisenspeicher 0
+                                
+                            </td>
+                            <td>115</td></tr>  <tr>
+                            <td>
+                                Eisenspeicher 1
+                                
+                            </td>
+                            <td>15</td></tr>  <tr>
+                            <td>
+                                Eisenspeicher 2
+                                
+                            </td>
+                            <td>39</td></tr>  <tr>
+                            <td>
+                                Eisenspeicher 3
+                                
+                            </td>
+                            <td>63</td></tr>  <tr>
+                            <td>
+                                Eisenspeicher 4
+                                
+                            </td>
+                            <td>51</td></tr>  <tr>
+                            <td>
+                                Eisenspeicher 5
+                                
+                            </td>
+                            <td>66</td></tr>  <tr>
+                            <td>
+                                Eisenspeicher 6
+                                
+                            </td>
+                            <td>85</td></tr>  <tr>
+                            <td>
+                                Eisenspeicher 7
+                                
+                            </td>
+                            <td>97</td></tr>  <tr>
+                            <td>
+                                Eisenspeicher 8
+                                
+                            </td>
+                            <td>90</td></tr>  <tr>
+                            <td>
+                                Eisenspeicher 9
+                                
+                            </td>
+                            <td>159</td></tr>  <tr>
+                            <td>
+                                Eisenspeicher 10
+                                
+                            </td>
+                            <td>244</td></tr>  <tr>
+                            <td>
+                                Eisenspeicher 11
+                                
+                            </td>
+                            <td>190</td></tr>  <tr>
+                            <td>
+                                Eisenspeicher 12
+                                
+                            </td>
+                            <td>118</td></tr>  <tr>
+                            <td>
+                                Eisenspeicher 13
+                                
+                            </td>
+                            <td>227</td></tr>  <tr>
+                            <td>
+                                Eisenspeicher 14
+                                
+                            </td>
+                            <td>120</td></tr>  <tr>
+                            <td>
+                                Eisenspeicher 15
+                                
+                            </td>
+                            <td>73</td></tr>  <tr>
+                            <td>
+                                Eisenspeicher 16
+                                
+                            </td>
+                            <td>119</td></tr>  <tr>
+                            <td>
+                                Eisenspeicher 17
+                                
+                            </td>
+                            <td>57</td></tr>  <tr>
+                            <td>
+                                Eisenspeicher 18
+                                
+                            </td>
+                            <td>51</td></tr>  <tr>
+                            <td>
+                                Eisenspeicher 19
+                                
+                            </td>
+                            <td>19</td></tr>  <tr>
+                            <td>
+                                Eisenspeicher 20
+                                
+                            </td>
+                            <td>37</td></tr>  <tr>
+                            <td>
+                                Eisenspeicher 21
+                                
+                            </td>
+                            <td>34</td></tr>  <tr>
+                            <td>
+                                Eisenspeicher 22
+                                
+                            </td>
+                            <td>26</td></tr></table>  <table class="stats box" style="display: none;" id="b9">
+                        <colgroup>
+                            <col width="75%">
+                            <col width="25%">
+                        </colgroup>
+                        <tr>
+                            <th colspan="2">Lutinumspeicher</th>
+                        </tr>  <tr>
+                            <td>
+                                Lutinumspeicher 0
+                                
+                            </td>
+                            <td>142</td></tr>  <tr>
+                            <td>
+                                Lutinumspeicher 1
+                                
+                            </td>
+                            <td>21</td></tr>  <tr>
+                            <td>
+                                Lutinumspeicher 2
+                                
+                            </td>
+                            <td>64</td></tr>  <tr>
+                            <td>
+                                Lutinumspeicher 3
+                                
+                            </td>
+                            <td>58</td></tr>  <tr>
+                            <td>
+                                Lutinumspeicher 4
+                                
+                            </td>
+                            <td>68</td></tr>  <tr>
+                            <td>
+                                Lutinumspeicher 5
+                                
+                            </td>
+                            <td>97</td></tr>  <tr>
+                            <td>
+                                Lutinumspeicher 6
+                                
+                            </td>
+                            <td>124</td></tr>  <tr>
+                            <td>
+                                Lutinumspeicher 7
+                                
+                            </td>
+                            <td>165</td></tr>  <tr>
+                            <td>
+                                Lutinumspeicher 8
+                                
+                            </td>
+                            <td>106</td></tr>  <tr>
+                            <td>
+                                Lutinumspeicher 9
+                                
+                            </td>
+                            <td>174</td></tr>  <tr>
+                            <td>
+                                Lutinumspeicher 10
+                                
+                            </td>
+                            <td>244</td></tr>  <tr>
+                            <td>
+                                Lutinumspeicher 11
+                                
+                            </td>
+                            <td>205</td></tr>  <tr>
+                            <td>
+                                Lutinumspeicher 12
+                                
+                            </td>
+                            <td>130</td></tr>  <tr>
+                            <td>
+                                Lutinumspeicher 13
+                                
+                            </td>
+                            <td>105</td></tr>  <tr>
+                            <td>
+                                Lutinumspeicher 14
+                                
+                            </td>
+                            <td>79</td></tr>  <tr>
+                            <td>
+                                Lutinumspeicher 15
+                                
+                            </td>
+                            <td>85</td></tr>  <tr>
+                            <td>
+                                Lutinumspeicher 16
+                                
+                            </td>
+                            <td>64</td></tr>  <tr>
+                            <td>
+                                Lutinumspeicher 17
+                                
+                            </td>
+                            <td>41</td></tr>  <tr>
+                            <td>
+                                Lutinumspeicher 18
+                                
+                            </td>
+                            <td>94</td></tr>  <tr>
+                            <td>
+                                Lutinumspeicher 19
+                                
+                            </td>
+                            <td>14</td></tr>  <tr>
+                            <td>
+                                Lutinumspeicher 20
+                                
+                            </td>
+                            <td>7</td></tr>  <tr>
+                            <td>
+                                Lutinumspeicher 21
+                                
+                            </td>
+                            <td>8</td></tr></table>  <table class="stats box" style="display: none;" id="b10">
+                        <colgroup>
+                            <col width="75%">
+                            <col width="25%">
+                        </colgroup>
+                        <tr>
+                            <th colspan="2">Wassertanks</th>
+                        </tr>  <tr>
+                            <td>
+                                Wassertanks 0
+                                
+                            </td>
+                            <td>969</td></tr>  <tr>
+                            <td>
+                                Wassertanks 1
+                                
+                            </td>
+                            <td>63</td></tr>  <tr>
+                            <td>
+                                Wassertanks 2
+                                
+                            </td>
+                            <td>118</td></tr>  <tr>
+                            <td>
+                                Wassertanks 3
+                                
+                            </td>
+                            <td>140</td></tr>  <tr>
+                            <td>
+                                Wassertanks 4
+                                
+                            </td>
+                            <td>69</td></tr>  <tr>
+                            <td>
+                                Wassertanks 5
+                                
+                            </td>
+                            <td>130</td></tr>  <tr>
+                            <td>
+                                Wassertanks 6
+                                
+                            </td>
+                            <td>56</td></tr>  <tr>
+                            <td>
+                                Wassertanks 7
+                                
+                            </td>
+                            <td>37</td></tr>  <tr>
+                            <td>
+                                Wassertanks 8
+                                
+                            </td>
+                            <td>91</td></tr>  <tr>
+                            <td>
+                                Wassertanks 9
+                                
+                            </td>
+                            <td>40</td></tr>  <tr>
+                            <td>
+                                Wassertanks 10
+                                
+                            </td>
+                            <td>188</td></tr>  <tr>
+                            <td>
+                                Wassertanks 11
+                                
+                            </td>
+                            <td>57</td></tr>  <tr>
+                            <td>
+                                Wassertanks 12
+                                
+                            </td>
+                            <td>33</td></tr>  <tr>
+                            <td>
+                                Wassertanks 13
+                                
+                            </td>
+                            <td>34</td></tr>  <tr>
+                            <td>
+                                Wassertanks 14
+                                
+                            </td>
+                            <td>44</td></tr>  <tr>
+                            <td>
+                                Wassertanks 15
+                                
+                            </td>
+                            <td>20</td></tr>  <tr>
+                            <td>
+                                Wassertanks 16
+                                
+                            </td>
+                            <td>3</td></tr>  <tr>
+                            <td>
+                                Wassertanks 19
+                                
+                            </td>
+                            <td>1</td></tr>  <tr>
+                            <td>
+                                Wassertanks 20
+                                
+                            </td>
+                            <td>2</td></tr></table>  <table class="stats box" style="display: none;" id="b11">
+                        <colgroup>
+                            <col width="75%">
+                            <col width="25%">
+                        </colgroup>
+                        <tr>
+                            <th colspan="2">Wasserstofftanks</th>
+                        </tr>  <tr>
+                            <td>
+                                Wasserstofftanks 0
+                                
+                            </td>
+                            <td>510</td></tr>  <tr>
+                            <td>
+                                Wasserstofftanks 1
+                                
+                            </td>
+                            <td>47</td></tr>  <tr>
+                            <td>
+                                Wasserstofftanks 2
+                                
+                            </td>
+                            <td>111</td></tr>  <tr>
+                            <td>
+                                Wasserstofftanks 3
+                                
+                            </td>
+                            <td>131</td></tr>  <tr>
+                            <td>
+                                Wasserstofftanks 4
+                                
+                            </td>
+                            <td>121</td></tr>  <tr>
+                            <td>
+                                Wasserstofftanks 5
+                                
+                            </td>
+                            <td>149</td></tr>  <tr>
+                            <td>
+                                Wasserstofftanks 6
+                                
+                            </td>
+                            <td>109</td></tr>  <tr>
+                            <td>
+                                Wasserstofftanks 7
+                                
+                            </td>
+                            <td>128</td></tr>  <tr>
+                            <td>
+                                Wasserstofftanks 8
+                                
+                            </td>
+                            <td>103</td></tr>  <tr>
+                            <td>
+                                Wasserstofftanks 9
+                                
+                            </td>
+                            <td>64</td></tr>  <tr>
+                            <td>
+                                Wasserstofftanks 10
+                                
+                            </td>
+                            <td>130</td></tr>  <tr>
+                            <td>
+                                Wasserstofftanks 11
+                                
+                            </td>
+                            <td>95</td></tr>  <tr>
+                            <td>
+                                Wasserstofftanks 12
+                                
+                            </td>
+                            <td>152</td></tr>  <tr>
+                            <td>
+                                Wasserstofftanks 13
+                                
+                            </td>
+                            <td>82</td></tr>  <tr>
+                            <td>
+                                Wasserstofftanks 14
+                                
+                            </td>
+                            <td>36</td></tr>  <tr>
+                            <td>
+                                Wasserstofftanks 15
+                                
+                            </td>
+                            <td>103</td></tr>  <tr>
+                            <td>
+                                Wasserstofftanks 16
+                                
+                            </td>
+                            <td>13</td></tr>  <tr>
+                            <td>
+                                Wasserstofftanks 17
+                                
+                            </td>
+                            <td>5</td></tr>  <tr>
+                            <td>
+                                Wasserstofftanks 18
+                                
+                            </td>
+                            <td>4</td></tr>  <tr>
+                            <td>
+                                Wasserstofftanks 19
+                                
+                            </td>
+                            <td>1</td></tr>  <tr>
+                            <td>
+                                Wasserstofftanks 20
+                                
+                            </td>
+                            <td>1</td></tr></table>  <table class="stats box" style="display: none;" id="b12">
+                        <colgroup>
+                            <col width="75%">
+                            <col width="25%">
+                        </colgroup>
+                        <tr>
+                            <th colspan="2">Schiffsfabrik</th>
+                        </tr>  <tr>
+                            <td>
+                                Schiffsfabrik 0
+                                
+                            </td>
+                            <td>138</td></tr>  <tr>
+                            <td>
+                                Schiffsfabrik 1
+                                
+                            </td>
+                            <td>295</td></tr>  <tr>
+                            <td>
+                                Schiffsfabrik 2
+                                
+                            </td>
+                            <td>52</td></tr>  <tr>
+                            <td>
+                                Schiffsfabrik 3
+                                
+                            </td>
+                            <td>58</td></tr>  <tr>
+                            <td>
+                                Schiffsfabrik 4
+                                
+                            </td>
+                            <td>90</td></tr>  <tr>
+                            <td>
+                                Schiffsfabrik 5
+                                
+                            </td>
+                            <td>80</td></tr>  <tr>
+                            <td>
+                                Schiffsfabrik 6
+                                
+                            </td>
+                            <td>91</td></tr>  <tr>
+                            <td>
+                                Schiffsfabrik 7
+                                
+                            </td>
+                            <td>47</td></tr>  <tr>
+                            <td>
+                                Schiffsfabrik 8
+                                
+                            </td>
+                            <td>79</td></tr>  <tr>
+                            <td>
+                                Schiffsfabrik 9
+                                
+                            </td>
+                            <td>86</td></tr>  <tr>
+                            <td>
+                                Schiffsfabrik 10
+                                
+                            </td>
+                            <td>81</td></tr>  <tr>
+                            <td>
+                                Schiffsfabrik 11
+                                
+                            </td>
+                            <td>106</td></tr>  <tr>
+                            <td>
+                                Schiffsfabrik 12
+                                
+                            </td>
+                            <td>140</td></tr>  <tr>
+                            <td>
+                                Schiffsfabrik 13
+                                
+                            </td>
+                            <td>149</td></tr>  <tr>
+                            <td>
+                                Schiffsfabrik 14
+                                
+                            </td>
+                            <td>95</td></tr>  <tr>
+                            <td>
+                                Schiffsfabrik 15
+                                
+                            </td>
+                            <td>95</td></tr>  <tr>
+                            <td>
+                                Schiffsfabrik 16
+                                
+                            </td>
+                            <td>65</td></tr>  <tr>
+                            <td>
+                                Schiffsfabrik 17
+                                
+                            </td>
+                            <td>76</td></tr>  <tr>
+                            <td>
+                                Schiffsfabrik 18
+                                
+                            </td>
+                            <td>101</td></tr>  <tr>
+                            <td>
+                                Schiffsfabrik 19
+                                
+                            </td>
+                            <td>29</td></tr>  <tr>
+                            <td>
+                                Schiffsfabrik 20
+                                
+                            </td>
+                            <td>76</td></tr>  <tr>
+                            <td>
+                                Schiffsfabrik 21
+                                
+                            </td>
+                            <td>7</td></tr>  <tr>
+                            <td>
+                                Schiffsfabrik 22
+                                
+                            </td>
+                            <td>24</td></tr>  <tr>
+                            <td>
+                                Schiffsfabrik 23
+                                
+                            </td>
+                            <td>21</td></tr>  <tr>
+                            <td>
+                                Schiffsfabrik 24
+                                
+                            </td>
+                            <td>7</td></tr>  <tr>
+                            <td>
+                                Schiffsfabrik 26
+                                
+                            </td>
+                            <td>1</td></tr>  <tr>
+                            <td>
+                                Schiffsfabrik 27
+                                
+                            </td>
+                            <td>1</td></tr>  <tr>
+                            <td>
+                                Schiffsfabrik 28
+                                
+                            </td>
+                            <td>2</td></tr>  <tr>
+                            <td>
+                                Schiffsfabrik 30
+                                
+                            </td>
+                            <td>2</td></tr>  <tr>
+                            <td>
+                                Schiffsfabrik 50
+                                
+                            </td>
+                            <td>1</td></tr></table>  <table class="stats box" style="display: none;" id="b13">
+                        <colgroup>
+                            <col width="75%">
+                            <col width="25%">
+                        </colgroup>
+                        <tr>
+                            <th colspan="2">Orbitale Verteidigungsstation</th>
+                        </tr>  <tr>
+                            <td>
+                                Orbitale Verteidigungsstation 0
+                                
+                            </td>
+                            <td>609</td></tr>  <tr>
+                            <td>
+                                Orbitale Verteidigungsstation 1
+                                
+                            </td>
+                            <td>840</td></tr>  <tr>
+                            <td>
+                                Orbitale Verteidigungsstation 2
+                                
+                            </td>
+                            <td>83</td></tr>  <tr>
+                            <td>
+                                Orbitale Verteidigungsstation 3
+                                
+                            </td>
+                            <td>24</td></tr>  <tr>
+                            <td>
+                                Orbitale Verteidigungsstation 4
+                                
+                            </td>
+                            <td>21</td></tr>  <tr>
+                            <td>
+                                Orbitale Verteidigungsstation 5
+                                
+                            </td>
+                            <td>121</td></tr>  <tr>
+                            <td>
+                                Orbitale Verteidigungsstation 6
+                                
+                            </td>
+                            <td>25</td></tr>  <tr>
+                            <td>
+                                Orbitale Verteidigungsstation 7
+                                
+                            </td>
+                            <td>37</td></tr>  <tr>
+                            <td>
+                                Orbitale Verteidigungsstation 8
+                                
+                            </td>
+                            <td>40</td></tr>  <tr>
+                            <td>
+                                Orbitale Verteidigungsstation 9
+                                
+                            </td>
+                            <td>12</td></tr>  <tr>
+                            <td>
+                                Orbitale Verteidigungsstation 10
+                                
+                            </td>
+                            <td>69</td></tr>  <tr>
+                            <td>
+                                Orbitale Verteidigungsstation 11
+                                
+                            </td>
+                            <td>42</td></tr>  <tr>
+                            <td>
+                                Orbitale Verteidigungsstation 12
+                                
+                            </td>
+                            <td>14</td></tr>  <tr>
+                            <td>
+                                Orbitale Verteidigungsstation 13
+                                
+                            </td>
+                            <td>24</td></tr>  <tr>
+                            <td>
+                                Orbitale Verteidigungsstation 14
+                                
+                            </td>
+                            <td>4</td></tr>  <tr>
+                            <td>
+                                Orbitale Verteidigungsstation 15
+                                
+                            </td>
+                            <td>31</td></tr>  <tr>
+                            <td>
+                                Orbitale Verteidigungsstation 16
+                                
+                            </td>
+                            <td>21</td></tr>  <tr>
+                            <td>
+                                Orbitale Verteidigungsstation 17
+                                
+                            </td>
+                            <td>4</td></tr>  <tr>
+                            <td>
+                                Orbitale Verteidigungsstation 18
+                                
+                            </td>
+                            <td>21</td></tr>  <tr>
+                            <td>
+                                Orbitale Verteidigungsstation 19
+                                
+                            </td>
+                            <td>7</td></tr>  <tr>
+                            <td>
+                                Orbitale Verteidigungsstation 20
+                                
+                            </td>
+                            <td>14</td></tr>  <tr>
+                            <td>
+                                Orbitale Verteidigungsstation 21
+                                
+                            </td>
+                            <td>3</td></tr>  <tr>
+                            <td>
+                                Orbitale Verteidigungsstation 22
+                                
+                            </td>
+                            <td>9</td></tr>  <tr>
+                            <td>
+                                Orbitale Verteidigungsstation 23
+                                
+                            </td>
+                            <td>2</td></tr>  <tr>
+                            <td>
+                                Orbitale Verteidigungsstation 24
+                                
+                            </td>
+                            <td>5</td></tr>  <tr>
+                            <td>
+                                Orbitale Verteidigungsstation 25
+                                
+                            </td>
+                            <td>5</td></tr>  <tr>
+                            <td>
+                                Orbitale Verteidigungsstation 26
+                                
+                            </td>
+                            <td>4</td></tr>  <tr>
+                            <td>
+                                Orbitale Verteidigungsstation 27
+                                
+                            </td>
+                            <td>1</td></tr>  <tr>
+                            <td>
+                                Orbitale Verteidigungsstation 41
+                                
+                            </td>
+                            <td>1</td></tr>  <tr>
+                            <td>
+                                Orbitale Verteidigungsstation 42
+                                
+                            </td>
+                            <td>1</td></tr>  <tr>
+                            <td>
+                                Orbitale Verteidigungsstation 56
+                                
+                            </td>
+                            <td>1</td></tr></table>  <table class="stats box" style="display: none;" id="b14">
+                        <colgroup>
+                            <col width="75%">
+                            <col width="25%">
+                        </colgroup>
+                        <tr>
+                            <th colspan="2">Planetarer Schild</th>
+                        </tr>  <tr>
+                            <td>
+                                Planetarer Schild 0
+                                
+                            </td>
+                            <td>753</td></tr>  <tr>
+                            <td>
+                                Planetarer Schild 1
+                                
+                            </td>
+                            <td>60</td></tr>  <tr>
+                            <td>
+                                Planetarer Schild 2
+                                
+                            </td>
+                            <td>96</td></tr>  <tr>
+                            <td>
+                                Planetarer Schild 3
+                                
+                            </td>
+                            <td>134</td></tr>  <tr>
+                            <td>
+                                Planetarer Schild 4
+                                
+                            </td>
+                            <td>137</td></tr>  <tr>
+                            <td>
+                                Planetarer Schild 5
+                                
+                            </td>
+                            <td>139</td></tr>  <tr>
+                            <td>
+                                Planetarer Schild 6
+                                
+                            </td>
+                            <td>111</td></tr>  <tr>
+                            <td>
+                                Planetarer Schild 7
+                                
+                            </td>
+                            <td>131</td></tr>  <tr>
+                            <td>
+                                Planetarer Schild 8
+                                
+                            </td>
+                            <td>109</td></tr>  <tr>
+                            <td>
+                                Planetarer Schild 9
+                                
+                            </td>
+                            <td>88</td></tr>  <tr>
+                            <td>
+                                Planetarer Schild 10
+                                
+                            </td>
+                            <td>150</td></tr>  <tr>
+                            <td>
+                                Planetarer Schild 11
+                                
+                            </td>
+                            <td>50</td></tr>  <tr>
+                            <td>
+                                Planetarer Schild 12
+                                
+                            </td>
+                            <td>12</td></tr>  <tr>
+                            <td>
+                                Planetarer Schild 13
+                                
+                            </td>
+                            <td>25</td></tr>  <tr>
+                            <td>
+                                Planetarer Schild 14
+                                
+                            </td>
+                            <td>71</td></tr>  <tr>
+                            <td>
+                                Planetarer Schild 15
+                                
+                            </td>
+                            <td>4</td></tr>  <tr>
+                            <td>
+                                Planetarer Schild 17
+                                
+                            </td>
+                            <td>21</td></tr>  <tr>
+                            <td>
+                                Planetarer Schild 18
+                                
+                            </td>
+                            <td>2</td></tr>  <tr>
+                            <td>
+                                Planetarer Schild 25
+                                
+                            </td>
+                            <td>1</td></tr>  <tr>
+                            <td>
+                                Planetarer Schild 27
+                                
+                            </td>
+                            <td>1</td></tr></table>  <table class="stats box" style="display: none;" id="b15">
+                        <colgroup>
+                            <col width="75%">
+                            <col width="25%">
+                        </colgroup>
+                        <tr>
+                            <th colspan="2">Fusionsreaktor</th>
+                        </tr>  <tr>
+                            <td>
+                                Fusionsreaktor 0
+                                
+                            </td>
+                            <td>713</td></tr>  <tr>
+                            <td>
+                                Fusionsreaktor 1
+                                
+                            </td>
+                            <td>100</td></tr>  <tr>
+                            <td>
+                                Fusionsreaktor 2
+                                
+                            </td>
+                            <td>121</td></tr>  <tr>
+                            <td>
+                                Fusionsreaktor 3
+                                
+                            </td>
+                            <td>109</td></tr>  <tr>
+                            <td>
+                                Fusionsreaktor 4
+                                
+                            </td>
+                            <td>119</td></tr>  <tr>
+                            <td>
+                                Fusionsreaktor 5
+                                
+                            </td>
+                            <td>183</td></tr>  <tr>
+                            <td>
+                                Fusionsreaktor 6
+                                
+                            </td>
+                            <td>107</td></tr>  <tr>
+                            <td>
+                                Fusionsreaktor 7
+                                
+                            </td>
+                            <td>100</td></tr>  <tr>
+                            <td>
+                                Fusionsreaktor 8
+                                
+                            </td>
+                            <td>157</td></tr>  <tr>
+                            <td>
+                                Fusionsreaktor 9
+                                
+                            </td>
+                            <td>61</td></tr>  <tr>
+                            <td>
+                                Fusionsreaktor 10
+                                
+                            </td>
+                            <td>108</td></tr>  <tr>
+                            <td>
+                                Fusionsreaktor 11
+                                
+                            </td>
+                            <td>81</td></tr>  <tr>
+                            <td>
+                                Fusionsreaktor 12
+                                
+                            </td>
+                            <td>8</td></tr>  <tr>
+                            <td>
+                                Fusionsreaktor 13
+                                
+                            </td>
+                            <td>37</td></tr>  <tr>
+                            <td>
+                                Fusionsreaktor 14
+                                
+                            </td>
+                            <td>62</td></tr>  <tr>
+                            <td>
+                                Fusionsreaktor 15
+                                
+                            </td>
+                            <td>4</td></tr>  <tr>
+                            <td>
+                                Fusionsreaktor 17
+                                
+                            </td>
+                            <td>20</td></tr>  <tr>
+                            <td>
+                                Fusionsreaktor 18
+                                
+                            </td>
+                            <td>3</td></tr>  <tr>
+                            <td>
+                                Fusionsreaktor 25
+                                
+                            </td>
+                            <td>1</td></tr>  <tr>
+                            <td>
+                                Fusionsreaktor 30
+                                
+                            </td>
+                            <td>1</td></tr></table>    </div>
+</div>
+</body>
+</html>

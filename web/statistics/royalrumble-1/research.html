@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Forschungen - GigraWars RR 1</title>
+    <meta charset="utf-8"/>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="http://code.jquery.com/jquery.js"></script>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("select#gwstats").change(function(){
+                $( "select#gwstats option:selected").each(function(){
+                    $(".box").hide();
+                    $("#"+$(this).attr("value")).show();
+                });
+            }).change();
+        });
+    </script>
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-58692233-11']);
+        _gaq.push(['_gat._anonymizeIp']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+</head>
+<body>
+<header>
+    <div class="center">
+        <div id="logo">GigraWars erster Royal Rumble</div>
+        <ul>
+            <li><a href="index.html">Übersicht</a></li>
+            <li><a href="building.html">Gebäude</a></li>
+            <li class="active"><a href="research.html">Forschungen</a></li>
+            <li><a href="toplisten.html">Toplisten</a></li>
+            <li><a href="award.html">Preise</a></li>
+        </ul>
+    </div>
+</header>
+<div id="subnav">
+    <div class="center">
+        Wähle eine Forschung aus der Liste
+        <select id="gwstats">
+            <option value="r1">Verbrennungsantrieb</option><option value="r2">Ionenantrieb</option><option value="r3">Raumkrümmungsantrieb</option><option value="r4">Raumfaltungsantrieb</option><option value="r5">Ionisation</option><option value="r6">Energiebündelung</option><option value="r7">Explosivgeschosse</option><option value="r8">Spionagetechnik</option><option value="r9">Erweiterte Schiffspanzerung</option><option value="r10">Erhöhte Ladekapazität</option><option value="r11">Recycling-Technik</option>        </select>
+    </div>
+</div>
+<div id="content">
+    <div class="center">
+        <h1>Forschungen</h1>
+          <table class="stats box" style="display: none;" id="r1">
+                        <colgroup>
+                            <col width="75%">
+                            <col width="25%">
+                        </colgroup>
+                        <tr>
+                            <th colspan="2">Verbrennungsantrieb</th>
+                        </tr>  <tr>
+                            <td>Verbrennungsantrieb 0 </td><td>2</td>
+                        </tr>  <tr>
+                            <td>Verbrennungsantrieb 1 </td><td>3</td>
+                        </tr>  <tr>
+                            <td>Verbrennungsantrieb 2 </td><td>4</td>
+                        </tr>  <tr>
+                            <td>Verbrennungsantrieb 3 </td><td>1</td>
+                        </tr>  <tr>
+                            <td>Verbrennungsantrieb 4 </td><td>1</td>
+                        </tr>  <tr>
+                            <td>Verbrennungsantrieb 5 </td><td>33</td>
+                        </tr>  <tr>
+                            <td>Verbrennungsantrieb 6 </td><td>6</td>
+                        </tr>  <tr>
+                            <td>Verbrennungsantrieb 7 </td><td>3</td>
+                        </tr>  <tr>
+                            <td>Verbrennungsantrieb 8 </td><td>4</td>
+                        </tr>  <tr>
+                            <td>Verbrennungsantrieb 9 </td><td>3</td>
+                        </tr>  <tr>
+                            <td>Verbrennungsantrieb 10 </td><td>7</td>
+                        </tr>  <tr>
+                            <td>Verbrennungsantrieb 11 </td><td>4</td>
+                        </tr>  <tr>
+                            <td>Verbrennungsantrieb 12 </td><td>2</td>
+                        </tr>  <tr>
+                            <td>Verbrennungsantrieb 13 </td><td>2</td>
+                        </tr>  <tr>
+                            <td>Verbrennungsantrieb 14 </td><td>3</td>
+                        </tr>  <tr>
+                            <td>Verbrennungsantrieb 15 </td><td>1</td>
+                        </tr>  <tr>
+                            <td>Verbrennungsantrieb 16 </td><td>1</td>
+                        </tr>  <tr>
+                            <td>Verbrennungsantrieb 18 </td><td>2</td>
+                        </tr>  <tr>
+                            <td>Verbrennungsantrieb 20 </td><td>1</td>
+                        </tr>  <tr>
+                            <td>Verbrennungsantrieb 23 </td><td>1</td>
+                        </tr>  <tr>
+                            <td>Verbrennungsantrieb 24 </td><td>1</td>
+                        </tr>  <tr>
+                            <td>Verbrennungsantrieb 25 </td><td>1</td>
+                        </tr>  <tr>
+                            <td>Verbrennungsantrieb 26 </td><td>2</td>
+                        </tr>  </table>  <table class="stats box" style="display: none;" id="r2">
+                        <colgroup>
+                            <col width="75%">
+                            <col width="25%">
+                        </colgroup>
+                        <tr>
+                            <th colspan="2">Ionenantrieb</th>
+                        </tr>  <tr>
+                            <td>Ionenantrieb 0 </td><td>3</td>
+                        </tr>  <tr>
+                            <td>Ionenantrieb 2 </td><td>1</td>
+                        </tr>  <tr>
+                            <td>Ionenantrieb 3 </td><td>1</td>
+                        </tr>  <tr>
+                            <td>Ionenantrieb 4 </td><td>6</td>
+                        </tr>  <tr>
+                            <td>Ionenantrieb 5 </td><td>42</td>
+                        </tr>  <tr>
+                            <td>Ionenantrieb 6 </td><td>4</td>
+                        </tr>  <tr>
+                            <td>Ionenantrieb 7 </td><td>3</td>
+                        </tr>  <tr>
+                            <td>Ionenantrieb 8 </td><td>5</td>
+                        </tr>  <tr>
+                            <td>Ionenantrieb 9 </td><td>3</td>
+                        </tr>  <tr>
+                            <td>Ionenantrieb 10 </td><td>6</td>
+                        </tr>  <tr>
+                            <td>Ionenantrieb 11 </td><td>2</td>
+                        </tr>  <tr>
+                            <td>Ionenantrieb 12 </td><td>1</td>
+                        </tr>  <tr>
+                            <td>Ionenantrieb 13 </td><td>1</td>
+                        </tr>  <tr>
+                            <td>Ionenantrieb 14 </td><td>5</td>
+                        </tr>  <tr>
+                            <td>Ionenantrieb 15 </td><td>2</td>
+                        </tr>  <tr>
+                            <td>Ionenantrieb 21 </td><td>1</td>
+                        </tr>  <tr>
+                            <td>Ionenantrieb 23 </td><td>1</td>
+                        </tr>  <tr>
+                            <td>Ionenantrieb 24 </td><td>1</td>
+                        </tr>  </table>  <table class="stats box" style="display: none;" id="r3">
+                        <colgroup>
+                            <col width="75%">
+                            <col width="25%">
+                        </colgroup>
+                        <tr>
+                            <th colspan="2">Raumkrümmungsantrieb</th>
+                        </tr>  <tr>
+                            <td>Raumkrümmungsantrieb 0 </td><td>12</td>
+                        </tr>  <tr>
+                            <td>Raumkrümmungsantrieb 2 </td><td>1</td>
+                        </tr>  <tr>
+                            <td>Raumkrümmungsantrieb 3 </td><td>1</td>
+                        </tr>  <tr>
+                            <td>Raumkrümmungsantrieb 4 </td><td>2</td>
+                        </tr>  <tr>
+                            <td>Raumkrümmungsantrieb 6 </td><td>1</td>
+                        </tr>  <tr>
+                            <td>Raumkrümmungsantrieb 7 </td><td>2</td>
+                        </tr>  <tr>
+                            <td>Raumkrümmungsantrieb 8 </td><td>2</td>
+                        </tr>  <tr>
+                            <td>Raumkrümmungsantrieb 10 </td><td>8</td>
+                        </tr>  <tr>
+                            <td>Raumkrümmungsantrieb 11 </td><td>1</td>
+                        </tr>  <tr>
+                            <td>Raumkrümmungsantrieb 12 </td><td>9</td>
+                        </tr>  <tr>
+                            <td>Raumkrümmungsantrieb 13 </td><td>4</td>
+                        </tr>  <tr>
+                            <td>Raumkrümmungsantrieb 14 </td><td>2</td>
+                        </tr>  <tr>
+                            <td>Raumkrümmungsantrieb 15 </td><td>1</td>
+                        </tr>  <tr>
+                            <td>Raumkrümmungsantrieb 16 </td><td>1</td>
+                        </tr>  <tr>
+                            <td>Raumkrümmungsantrieb 17 </td><td>4</td>
+                        </tr>  <tr>
+                            <td>Raumkrümmungsantrieb 18 </td><td>4</td>
+                        </tr>  <tr>
+                            <td>Raumkrümmungsantrieb 19 </td><td>2</td>
+                        </tr>  <tr>
+                            <td>Raumkrümmungsantrieb 20 </td><td>9</td>
+                        </tr>  <tr>
+                            <td>Raumkrümmungsantrieb 21 </td><td>7</td>
+                        </tr>  <tr>
+                            <td>Raumkrümmungsantrieb 22 </td><td>2</td>
+                        </tr>  <tr>
+                            <td>Raumkrümmungsantrieb 23 </td><td>3</td>
+                        </tr>  <tr>
+                            <td>Raumkrümmungsantrieb 24 </td><td>2</td>
+                        </tr>  <tr>
+                            <td>Raumkrümmungsantrieb 26 </td><td>2</td>
+                        </tr>  <tr>
+                            <td>Raumkrümmungsantrieb 27 </td><td>1</td>
+                        </tr>  <tr>
+                            <td>Raumkrümmungsantrieb 29 </td><td>3</td>
+                        </tr>  <tr>
+                            <td>Raumkrümmungsantrieb 30 </td><td>1</td>
+                        </tr>  <tr>
+                            <td>Raumkrümmungsantrieb 31 </td><td>1</td>
+                        </tr>  </table>  <table class="stats box" style="display: none;" id="r4">
+                        <colgroup>
+                            <col width="75%">
+                            <col width="25%">
+                        </colgroup>
+                        <tr>
+                            <th colspan="2">Raumfaltungsantrieb</th>
+                        </tr>  <tr>
+                            <td>Raumfaltungsantrieb 0 </td><td>21</td>
+                        </tr>  <tr>
+                            <td>Raumfaltungsantrieb 2 </td><td>1</td>
+                        </tr>  <tr>
+                            <td>Raumfaltungsantrieb 3 </td><td>1</td>
+                        </tr>  <tr>
+                            <td>Raumfaltungsantrieb 4 </td><td>2</td>
+                        </tr>  <tr>
+                            <td>Raumfaltungsantrieb 5 </td><td>2</td>
+                        </tr>  <tr>
+                            <td>Raumfaltungsantrieb 6 </td><td>3</td>
+                        </tr>  <tr>
+                            <td>Raumfaltungsantrieb 7 </td><td>3</td>
+                        </tr>  <tr>
+                            <td>Raumfaltungsantrieb 8 </td><td>2</td>
+                        </tr>  <tr>
+                            <td>Raumfaltungsantrieb 9 </td><td>2</td>
+                        </tr>  <tr>
+                            <td>Raumfaltungsantrieb 10 </td><td>6</td>
+                        </tr>  <tr>
+                            <td>Raumfaltungsantrieb 11 </td><td>4</td>
+                        </tr>  <tr>
+                            <td>Raumfaltungsantrieb 12 </td><td>8</td>
+                        </tr>  <tr>
+                            <td>Raumfaltungsantrieb 13 </td><td>4</td>
+                        </tr>  <tr>
+                            <td>Raumfaltungsantrieb 14 </td><td>8</td>
+                        </tr>  <tr>
+                            <td>Raumfaltungsantrieb 15 </td><td>4</td>
+                        </tr>  <tr>
+                            <td>Raumfaltungsantrieb 16 </td><td>4</td>
+                        </tr>  <tr>
+                            <td>Raumfaltungsantrieb 17 </td><td>6</td>
+                        </tr>  <tr>
+                            <td>Raumfaltungsantrieb 18 </td><td>2</td>
+                        </tr>  <tr>
+                            <td>Raumfaltungsantrieb 20 </td><td>2</td>
+                        </tr>  <tr>
+                            <td>Raumfaltungsantrieb 21 </td><td>1</td>
+                        </tr>  <tr>
+                            <td>Raumfaltungsantrieb 25 </td><td>2</td>
+                        </tr>  </table>  <table class="stats box" style="display: none;" id="r5">
+                        <colgroup>
+                            <col width="75%">
+                            <col width="25%">
+                        </colgroup>
+                        <tr>
+                            <th colspan="2">Ionisation</th>
+                        </tr>  <tr>
+                            <td>Ionisation 0 </td><td>16</td>
+                        </tr>  <tr>
+                            <td>Ionisation 1 </td><td>4</td>
+                        </tr>  <tr>
+                            <td>Ionisation 2 </td><td>5</td>
+                        </tr>  <tr>
+                            <td>Ionisation 3 </td><td>1</td>
+                        </tr>  <tr>
+                            <td>Ionisation 4 </td><td>6</td>
+                        </tr>  <tr>
+                            <td>Ionisation 5 </td><td>5</td>
+                        </tr>  <tr>
+                            <td>Ionisation 6 </td><td>6</td>
+                        </tr>  <tr>
+                            <td>Ionisation 7 </td><td>2</td>
+                        </tr>  <tr>
+                            <td>Ionisation 8 </td><td>2</td>
+                        </tr>  <tr>
+                            <td>Ionisation 9 </td><td>3</td>
+                        </tr>  <tr>
+                            <td>Ionisation 10 </td><td>5</td>
+                        </tr>  <tr>
+                            <td>Ionisation 11 </td><td>8</td>
+                        </tr>  <tr>
+                            <td>Ionisation 12 </td><td>6</td>
+                        </tr>  <tr>
+                            <td>Ionisation 13 </td><td>5</td>
+                        </tr>  <tr>
+                            <td>Ionisation 14 </td><td>1</td>
+                        </tr>  <tr>
+                            <td>Ionisation 15 </td><td>3</td>
+                        </tr>  <tr>
+                            <td>Ionisation 16 </td><td>1</td>
+                        </tr>  <tr>
+                            <td>Ionisation 18 </td><td>1</td>
+                        </tr>  <tr>
+                            <td>Ionisation 19 </td><td>1</td>
+                        </tr>  <tr>
+                            <td>Ionisation 20 </td><td>1</td>
+                        </tr>  <tr>
+                            <td>Ionisation 21 </td><td>1</td>
+                        </tr>  <tr>
+                            <td>Ionisation 22 </td><td>2</td>
+                        </tr>  <tr>
+                            <td>Ionisation 23 </td><td>1</td>
+                        </tr>  <tr>
+                            <td>Ionisation 25 </td><td>1</td>
+                        </tr>  <tr>
+                            <td>Ionisation 27 </td><td>1</td>
+                        </tr>  </table>  <table class="stats box" style="display: none;" id="r6">
+                        <colgroup>
+                            <col width="75%">
+                            <col width="25%">
+                        </colgroup>
+                        <tr>
+                            <th colspan="2">Energiebündelung</th>
+                        </tr>  <tr>
+                            <td>Energiebündelung 0 </td><td>19</td>
+                        </tr>  <tr>
+                            <td>Energiebündelung 1 </td><td>5</td>
+                        </tr>  <tr>
+                            <td>Energiebündelung 2 </td><td>1</td>
+                        </tr>  <tr>
+                            <td>Energiebündelung 3 </td><td>3</td>
+                        </tr>  <tr>
+                            <td>Energiebündelung 4 </td><td>4</td>
+                        </tr>  <tr>
+                            <td>Energiebündelung 5 </td><td>5</td>
+                        </tr>  <tr>
+                            <td>Energiebündelung 6 </td><td>3</td>
+                        </tr>  <tr>
+                            <td>Energiebündelung 7 </td><td>2</td>
+                        </tr>  <tr>
+                            <td>Energiebündelung 8 </td><td>5</td>
+                        </tr>  <tr>
+                            <td>Energiebündelung 9 </td><td>5</td>
+                        </tr>  <tr>
+                            <td>Energiebündelung 10 </td><td>5</td>
+                        </tr>  <tr>
+                            <td>Energiebündelung 11 </td><td>6</td>
+                        </tr>  <tr>
+                            <td>Energiebündelung 12 </td><td>4</td>
+                        </tr>  <tr>
+                            <td>Energiebündelung 13 </td><td>5</td>
+                        </tr>  <tr>
+                            <td>Energiebündelung 14 </td><td>2</td>
+                        </tr>  <tr>
+                            <td>Energiebündelung 15 </td><td>2</td>
+                        </tr>  <tr>
+                            <td>Energiebündelung 16 </td><td>3</td>
+                        </tr>  <tr>
+                            <td>Energiebündelung 17 </td><td>2</td>
+                        </tr>  <tr>
+                            <td>Energiebündelung 18 </td><td>1</td>
+                        </tr>  <tr>
+                            <td>Energiebündelung 20 </td><td>1</td>
+                        </tr>  <tr>
+                            <td>Energiebündelung 23 </td><td>1</td>
+                        </tr>  <tr>
+                            <td>Energiebündelung 24 </td><td>1</td>
+                        </tr>  <tr>
+                            <td>Energiebündelung 25 </td><td>2</td>
+                        </tr>  <tr>
+                            <td>Energiebündelung 28 </td><td>1</td>
+                        </tr>  </table>  <table class="stats box" style="display: none;" id="r7">
+                        <colgroup>
+                            <col width="75%">
+                            <col width="25%">
+                        </colgroup>
+                        <tr>
+                            <th colspan="2">Explosivgeschosse</th>
+                        </tr>  <tr>
+                            <td>Explosivgeschosse 0 </td><td>22</td>
+                        </tr>  <tr>
+                            <td>Explosivgeschosse 1 </td><td>2</td>
+                        </tr>  <tr>
+                            <td>Explosivgeschosse 3 </td><td>3</td>
+                        </tr>  <tr>
+                            <td>Explosivgeschosse 4 </td><td>2</td>
+                        </tr>  <tr>
+                            <td>Explosivgeschosse 5 </td><td>2</td>
+                        </tr>  <tr>
+                            <td>Explosivgeschosse 6 </td><td>4</td>
+                        </tr>  <tr>
+                            <td>Explosivgeschosse 7 </td><td>1</td>
+                        </tr>  <tr>
+                            <td>Explosivgeschosse 8 </td><td>4</td>
+                        </tr>  <tr>
+                            <td>Explosivgeschosse 9 </td><td>1</td>
+                        </tr>  <tr>
+                            <td>Explosivgeschosse 10 </td><td>8</td>
+                        </tr>  <tr>
+                            <td>Explosivgeschosse 11 </td><td>6</td>
+                        </tr>  <tr>
+                            <td>Explosivgeschosse 12 </td><td>3</td>
+                        </tr>  <tr>
+                            <td>Explosivgeschosse 13 </td><td>4</td>
+                        </tr>  <tr>
+                            <td>Explosivgeschosse 14 </td><td>2</td>
+                        </tr>  <tr>
+                            <td>Explosivgeschosse 15 </td><td>4</td>
+                        </tr>  <tr>
+                            <td>Explosivgeschosse 16 </td><td>1</td>
+                        </tr>  <tr>
+                            <td>Explosivgeschosse 17 </td><td>2</td>
+                        </tr>  <tr>
+                            <td>Explosivgeschosse 18 </td><td>4</td>
+                        </tr>  <tr>
+                            <td>Explosivgeschosse 19 </td><td>1</td>
+                        </tr>  <tr>
+                            <td>Explosivgeschosse 20 </td><td>2</td>
+                        </tr>  <tr>
+                            <td>Explosivgeschosse 21 </td><td>1</td>
+                        </tr>  <tr>
+                            <td>Explosivgeschosse 23 </td><td>1</td>
+                        </tr>  <tr>
+                            <td>Explosivgeschosse 24 </td><td>1</td>
+                        </tr>  <tr>
+                            <td>Explosivgeschosse 27 </td><td>3</td>
+                        </tr>  <tr>
+                            <td>Explosivgeschosse 29 </td><td>1</td>
+                        </tr>  <tr>
+                            <td>Explosivgeschosse 30 </td><td>2</td>
+                        </tr>  <tr>
+                            <td>Explosivgeschosse 40 </td><td>1</td>
+                        </tr>  </table>  <table class="stats box" style="display: none;" id="r8">
+                        <colgroup>
+                            <col width="75%">
+                            <col width="25%">
+                        </colgroup>
+                        <tr>
+                            <th colspan="2">Spionagetechnik</th>
+                        </tr>  <tr>
+                            <td>Spionagetechnik 0 </td><td>8</td>
+                        </tr>  <tr>
+                            <td>Spionagetechnik 1 </td><td>7</td>
+                        </tr>  <tr>
+                            <td>Spionagetechnik 2 </td><td>4</td>
+                        </tr>  <tr>
+                            <td>Spionagetechnik 3 </td><td>3</td>
+                        </tr>  <tr>
+                            <td>Spionagetechnik 4 </td><td>2</td>
+                        </tr>  <tr>
+                            <td>Spionagetechnik 5 </td><td>7</td>
+                        </tr>  <tr>
+                            <td>Spionagetechnik 6 </td><td>8</td>
+                        </tr>  <tr>
+                            <td>Spionagetechnik 7 </td><td>2</td>
+                        </tr>  <tr>
+                            <td>Spionagetechnik 8 </td><td>3</td>
+                        </tr>  <tr>
+                            <td>Spionagetechnik 9 </td><td>1</td>
+                        </tr>  <tr>
+                            <td>Spionagetechnik 10 </td><td>4</td>
+                        </tr>  <tr>
+                            <td>Spionagetechnik 11 </td><td>5</td>
+                        </tr>  <tr>
+                            <td>Spionagetechnik 13 </td><td>3</td>
+                        </tr>  <tr>
+                            <td>Spionagetechnik 14 </td><td>3</td>
+                        </tr>  <tr>
+                            <td>Spionagetechnik 15 </td><td>5</td>
+                        </tr>  <tr>
+                            <td>Spionagetechnik 16 </td><td>4</td>
+                        </tr>  <tr>
+                            <td>Spionagetechnik 17 </td><td>3</td>
+                        </tr>  <tr>
+                            <td>Spionagetechnik 18 </td><td>1</td>
+                        </tr>  <tr>
+                            <td>Spionagetechnik 20 </td><td>2</td>
+                        </tr>  <tr>
+                            <td>Spionagetechnik 21 </td><td>2</td>
+                        </tr>  <tr>
+                            <td>Spionagetechnik 22 </td><td>2</td>
+                        </tr>  <tr>
+                            <td>Spionagetechnik 23 </td><td>1</td>
+                        </tr>  <tr>
+                            <td>Spionagetechnik 25 </td><td>1</td>
+                        </tr>  <tr>
+                            <td>Spionagetechnik 26 </td><td>2</td>
+                        </tr>  <tr>
+                            <td>Spionagetechnik 28 </td><td>1</td>
+                        </tr>  <tr>
+                            <td>Spionagetechnik 30 </td><td>2</td>
+                        </tr>  <tr>
+                            <td>Spionagetechnik 33 </td><td>1</td>
+                        </tr>  <tr>
+                            <td>Spionagetechnik 39 </td><td>1</td>
+                        </tr>  </table>  <table class="stats box" style="display: none;" id="r9">
+                        <colgroup>
+                            <col width="75%">
+                            <col width="25%">
+                        </colgroup>
+                        <tr>
+                            <th colspan="2">Erweiterte Schiffspanzerung</th>
+                        </tr>  <tr>
+                            <td>Erweiterte Schiffspanzerung 0 </td><td>13</td>
+                        </tr>  <tr>
+                            <td>Erweiterte Schiffspanzerung 1 </td><td>6</td>
+                        </tr>  <tr>
+                            <td>Erweiterte Schiffspanzerung 2 </td><td>3</td>
+                        </tr>  <tr>
+                            <td>Erweiterte Schiffspanzerung 3 </td><td>3</td>
+                        </tr>  <tr>
+                            <td>Erweiterte Schiffspanzerung 4 </td><td>5</td>
+                        </tr>  <tr>
+                            <td>Erweiterte Schiffspanzerung 5 </td><td>5</td>
+                        </tr>  <tr>
+                            <td>Erweiterte Schiffspanzerung 6 </td><td>3</td>
+                        </tr>  <tr>
+                            <td>Erweiterte Schiffspanzerung 7 </td><td>4</td>
+                        </tr>  <tr>
+                            <td>Erweiterte Schiffspanzerung 8 </td><td>1</td>
+                        </tr>  <tr>
+                            <td>Erweiterte Schiffspanzerung 9 </td><td>3</td>
+                        </tr>  <tr>
+                            <td>Erweiterte Schiffspanzerung 10 </td><td>3</td>
+                        </tr>  <tr>
+                            <td>Erweiterte Schiffspanzerung 11 </td><td>6</td>
+                        </tr>  <tr>
+                            <td>Erweiterte Schiffspanzerung 12 </td><td>6</td>
+                        </tr>  <tr>
+                            <td>Erweiterte Schiffspanzerung 13 </td><td>5</td>
+                        </tr>  <tr>
+                            <td>Erweiterte Schiffspanzerung 14 </td><td>4</td>
+                        </tr>  <tr>
+                            <td>Erweiterte Schiffspanzerung 15 </td><td>5</td>
+                        </tr>  <tr>
+                            <td>Erweiterte Schiffspanzerung 16 </td><td>4</td>
+                        </tr>  <tr>
+                            <td>Erweiterte Schiffspanzerung 17 </td><td>1</td>
+                        </tr>  <tr>
+                            <td>Erweiterte Schiffspanzerung 18 </td><td>1</td>
+                        </tr>  <tr>
+                            <td>Erweiterte Schiffspanzerung 20 </td><td>1</td>
+                        </tr>  <tr>
+                            <td>Erweiterte Schiffspanzerung 23 </td><td>1</td>
+                        </tr>  <tr>
+                            <td>Erweiterte Schiffspanzerung 24 </td><td>1</td>
+                        </tr>  <tr>
+                            <td>Erweiterte Schiffspanzerung 25 </td><td>1</td>
+                        </tr>  <tr>
+                            <td>Erweiterte Schiffspanzerung 26 </td><td>1</td>
+                        </tr>  <tr>
+                            <td>Erweiterte Schiffspanzerung 28 </td><td>2</td>
+                        </tr>  </table>  <table class="stats box" style="display: none;" id="r10">
+                        <colgroup>
+                            <col width="75%">
+                            <col width="25%">
+                        </colgroup>
+                        <tr>
+                            <th colspan="2">Erhöhte Ladekapazität</th>
+                        </tr>  <tr>
+                            <td>Erhöhte Ladekapazität 0 </td><td>15</td>
+                        </tr>  <tr>
+                            <td>Erhöhte Ladekapazität 1 </td><td>8</td>
+                        </tr>  <tr>
+                            <td>Erhöhte Ladekapazität 2 </td><td>2</td>
+                        </tr>  <tr>
+                            <td>Erhöhte Ladekapazität 3 </td><td>2</td>
+                        </tr>  <tr>
+                            <td>Erhöhte Ladekapazität 4 </td><td>1</td>
+                        </tr>  <tr>
+                            <td>Erhöhte Ladekapazität 5 </td><td>1</td>
+                        </tr>  <tr>
+                            <td>Erhöhte Ladekapazität 6 </td><td>9</td>
+                        </tr>  <tr>
+                            <td>Erhöhte Ladekapazität 7 </td><td>8</td>
+                        </tr>  <tr>
+                            <td>Erhöhte Ladekapazität 8 </td><td>2</td>
+                        </tr>  <tr>
+                            <td>Erhöhte Ladekapazität 9 </td><td>5</td>
+                        </tr>  <tr>
+                            <td>Erhöhte Ladekapazität 10 </td><td>4</td>
+                        </tr>  <tr>
+                            <td>Erhöhte Ladekapazität 11 </td><td>4</td>
+                        </tr>  <tr>
+                            <td>Erhöhte Ladekapazität 12 </td><td>2</td>
+                        </tr>  <tr>
+                            <td>Erhöhte Ladekapazität 13 </td><td>4</td>
+                        </tr>  <tr>
+                            <td>Erhöhte Ladekapazität 14 </td><td>2</td>
+                        </tr>  <tr>
+                            <td>Erhöhte Ladekapazität 15 </td><td>1</td>
+                        </tr>  <tr>
+                            <td>Erhöhte Ladekapazität 16 </td><td>4</td>
+                        </tr>  <tr>
+                            <td>Erhöhte Ladekapazität 18 </td><td>3</td>
+                        </tr>  <tr>
+                            <td>Erhöhte Ladekapazität 19 </td><td>2</td>
+                        </tr>  <tr>
+                            <td>Erhöhte Ladekapazität 20 </td><td>1</td>
+                        </tr>  <tr>
+                            <td>Erhöhte Ladekapazität 21 </td><td>3</td>
+                        </tr>  <tr>
+                            <td>Erhöhte Ladekapazität 22 </td><td>1</td>
+                        </tr>  <tr>
+                            <td>Erhöhte Ladekapazität 27 </td><td>3</td>
+                        </tr>  <tr>
+                            <td>Erhöhte Ladekapazität 28 </td><td>1</td>
+                        </tr>  </table>  <table class="stats box" style="display: none;" id="r11">
+                        <colgroup>
+                            <col width="75%">
+                            <col width="25%">
+                        </colgroup>
+                        <tr>
+                            <th colspan="2">Recycling-Technik</th>
+                        </tr>  <tr>
+                            <td>Recycling-Technik 0 </td><td>18</td>
+                        </tr>  <tr>
+                            <td>Recycling-Technik 1 </td><td>12</td>
+                        </tr>  <tr>
+                            <td>Recycling-Technik 2 </td><td>2</td>
+                        </tr>  <tr>
+                            <td>Recycling-Technik 3 </td><td>4</td>
+                        </tr>  <tr>
+                            <td>Recycling-Technik 4 </td><td>3</td>
+                        </tr>  <tr>
+                            <td>Recycling-Technik 5 </td><td>6</td>
+                        </tr>  <tr>
+                            <td>Recycling-Technik 6 </td><td>3</td>
+                        </tr>  <tr>
+                            <td>Recycling-Technik 7 </td><td>4</td>
+                        </tr>  <tr>
+                            <td>Recycling-Technik 8 </td><td>3</td>
+                        </tr>  <tr>
+                            <td>Recycling-Technik 9 </td><td>5</td>
+                        </tr>  <tr>
+                            <td>Recycling-Technik 10 </td><td>6</td>
+                        </tr>  <tr>
+                            <td>Recycling-Technik 11 </td><td>2</td>
+                        </tr>  <tr>
+                            <td>Recycling-Technik 12 </td><td>5</td>
+                        </tr>  <tr>
+                            <td>Recycling-Technik 13 </td><td>3</td>
+                        </tr>  <tr>
+                            <td>Recycling-Technik 14 </td><td>2</td>
+                        </tr>  <tr>
+                            <td>Recycling-Technik 15 </td><td>3</td>
+                        </tr>  <tr>
+                            <td>Recycling-Technik 16 </td><td>2</td>
+                        </tr>  <tr>
+                            <td>Recycling-Technik 17 </td><td>2</td>
+                        </tr>  <tr>
+                            <td>Recycling-Technik 21 </td><td>1</td>
+                        </tr>  <tr>
+                            <td>Recycling-Technik 22 </td><td>1</td>
+                        </tr>  <tr>
+                            <td>Recycling-Technik 27 </td><td>1</td>
+                        </tr>  </table>    </div>
+</div>
+</body>
+</html>
